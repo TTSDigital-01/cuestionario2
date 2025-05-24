@@ -4,15 +4,16 @@ import React from 'react';
 
 export default function QuestionnaireLayout({ children }) {
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans">
+    <div className="min-h-screen bg-white font-sans">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-200">
+      <header className="bg-[#f3f4f6] shadow-sm border-b border-gray-200">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-3">
-            <img src="/ICONO FINAL V1.svg" alt="TTS Digital Icono" className="h-8" />
-            <span className="text-primary-dark font-semibold">Cuestionario de Madurez Digital</span>
+            {/* Solo el ícono */}
+            <img src="/icono-v1.svg" alt="Ícono TTS Digital" className="h-8" />
+            <span className="text-[#1E3A8A] font-semibold">Cuestionario de Madurez Digital</span>
           </div>
-          <a href="/" className="text-primary-dark hover:text-primary-light font-medium">
+          <a href="/" className="text-[#1E3A8A] hover:text-[#0087D1] font-medium">
             Volver a Inicio
           </a>
         </div>
@@ -24,13 +25,11 @@ export default function QuestionnaireLayout({ children }) {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-gray-200 bg-white py-6 mt-auto">
-        <div className="container mx-auto px-4 text-center text-text-light_gray text-sm">
+      <footer className="border-t border-gray-200 bg-[#1E3A8A] py-6 mt-auto">
+        <div className="container mx-auto px-4 text-center text-white text-sm">
           <p>© {new Date().getFullYear()} TTS Digital. Todos los derechos reservados.</p>
-          <p className="mt-2">
-            <a href="/politica-de-privacidad" className="underline hover:text-primary-dark">
-              Política de Privacidad
-            </a>
+          <p className="mt-2 text-xs opacity-90">
+            Desarrollado con ❤️ por TTS Digital
           </p>
         </div>
       </footer>

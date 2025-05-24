@@ -32,14 +32,15 @@ export default function MadurezDigitalPage() {
   if (!tamañoSeleccionado) {
     return (
       <QuestionnaireLayout>
-        <div className="flex flex-col items-center justify-center min-h-[70vh] p-6">
+        <div className="flex flex-col items-center justify-center min-h-[70vh] p-6 bg-white">
           <img src="/logo-sf-1.png" alt="Logo TTS Digital" className="h-24 mb-8" />
 
+          {/* Página de inicio */}
           <h1 className="text-3xl md:text-4xl font-bold text-primary-dark mb-6 text-center max-w-xl px-4">
-            Evalúa tu nivel digital
+            Evalúa tu nivel de madurez digital
           </h1>
 
-          <p className="text-lg text-text-dark-gray max-w-md mx-auto mb-10">
+          <p className="text-lg text-text-dark_gray max-w-md mx-auto mb-10">
             Selecciona el tamaño de tu empresa para comenzar.
           </p>
 
@@ -79,7 +80,7 @@ export default function MadurezDigitalPage() {
   if (!preguntas.length) {
     return (
       <QuestionnaireLayout>
-        <div className="flex flex-col items-center justify-center min-h-[70vh] p-6">
+        <div className="flex flex-col items-center justify-center min-h-[70vh] p-6 bg-white">
           <img src="/logo-sf-1.png" alt="TTS Digital" className="h-24 mb-8" />
           <p className="text-xl font-semibold text-primary-dark mb-6">Cargando cuestionario...</p>
           <div className="w-full max-w-md h-2 bg-gray-200 rounded-full overflow-hidden">
@@ -91,24 +92,7 @@ export default function MadurezDigitalPage() {
   }
 
   const preguntasDelBloque = preguntas.filter(p => p.area === areas[currentBloque]);
-
-  // ✅ Validación segura
   const preguntaActual = preguntasDelBloque[currentPregunta];
-
-  if (!preguntaActual) {
-    return (
-      <QuestionnaireLayout>
-        <div className="flex flex-col items-center justify-center min-h-[70vh] p-6">
-          <p className="text-xl font-semibold text-primary-dark mb-6">
-            Cargando pregunta {currentPregunta + 1} del bloque {currentBloque + 1}
-          </p>
-          <p className="text-lg text-text-light_gray">
-            Estamos preparando tu evaluación...
-          </p>
-        </div>
-      </QuestionnaireLayout>
-    );
-  }
 
   const manejarRespuesta = (id, valor) => {
     const nuevasRespuestas = {
@@ -152,7 +136,7 @@ export default function MadurezDigitalPage() {
       <QuestionnaireLayout>
         <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md border border-gray-200">
           <h2 className="text-2xl font-bold text-primary-dark mb-6">Diagnóstico Preliminar</h2>
-          <p className="mb-8 text-text-light_gray">
+          <p className="mb-8 text-text-dark_gray">
             ¡Has completado el cuestionario! A continuación, se muestran tus resultados por área.
           </p>
 
@@ -160,16 +144,16 @@ export default function MadurezDigitalPage() {
           <table className="w-full table-auto mb-8">
             <thead>
               <tr className="bg-gray-100">
-                <th className="px-4 py-2 text-left">Área Evaluada</th>
-                <th className="px-4 py-2 text-center">Puntaje</th>
-                <th className="px-4 py-2 text-center">Nivel de Madurez</th>
+                <th className="px-4 py-2 text-left text-primary-dark font-semibold">Área Evaluada</th>
+                <th className="px-4 py-2 text-center text-primary-dark font-semibold">Puntaje</th>
+                <th className="px-4 py-2 text-center text-primary-dark font-semibold">Nivel de Madurez</th>
               </tr>
             </thead>
             <tbody>
               {resultadosPorArea.map((resultado, idx) => (
                 <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                  <td className="border px-4 py-2">{resultado.area}</td>
-                  <td className="border px-4 py-2 text-center">{resultado.promedio}</td>
+                  <td className="border px-4 py-2 text-text-dark_gray">{resultado.area}</td>
+                  <td className="border px-4 py-2 text-center text-text-dark_gray">{resultado.promedio}</td>
                   <td className="border px-4 py-2 text-center">{resultado.nivel}</td>
                 </tr>
               ))}
@@ -190,9 +174,24 @@ export default function MadurezDigitalPage() {
     );
   }
 
+  if (!preguntaActual) {
+    return (
+      <QuestionnaireLayout>
+        <div className="flex flex-col items-center justify-center min-h-[70vh] p-6 bg-white">
+          <p className="text-xl font-semibold text-primary-dark mb-6">
+            Cargando pregunta {currentPregunta + 1} del bloque {currentBloque + 1}
+          </p>
+          <p className="text-lg text-text-dark_gray mb-10">
+            Estamos preparando tu evaluación...
+          </p>
+        </div>
+      </QuestionnaireLayout>
+    );
+  }
+
   return (
     <QuestionnaireLayout>
-      <div className="max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-md border border-gray-200">
+      <div className="max-w-3xl mx-auto p-6 bg-[#f3f4f6] rounded-lg shadow-md border border-gray-200">
 
         {/* Barra de Progreso */}
         <div className="mb-8">
@@ -214,7 +213,7 @@ export default function MadurezDigitalPage() {
         </div>
 
         {/* Texto de pregunta */}
-        <h3 className="text-lg font-medium text-primary-dark mb-6">
+        <h3 className="text-lg font-medium text-[#0087D1] mb-6">
           {preguntaActual.text}
         </h3>
 
@@ -224,40 +223,35 @@ export default function MadurezDigitalPage() {
             <button
               key={idx}
               onClick={() => manejarRespuesta(preguntaActual.id, opt.value)}
-              className={`w-full text-left px-4 py-3 rounded-md ${
+              className={`w-full text-left px-4 py-3 rounded-md text-[#1E3A8A] ${
                 opt.value === 1
-                  ? 'bg-red-100 text-red-700'
+                  ? 'hover:bg-red-100 active:bg-red-200'
                   : opt.value === 2
-                  ? 'bg-orange-100 text-orange-700'
+                  ? 'hover:bg-orange-100 active:bg-orange-200'
                   : opt.value === 3
-                  ? 'bg-yellow-100 text-yellow-700'
-                  : 'bg-green-100 text-green-700'
+                  ? 'hover:bg-yellow-100 active:bg-yellow-200'
+                  : 'hover:bg-green-100 active:bg-green-200'
               }`}
+              style={{
+                backgroundColor: 'transparent',
+                transition: 'background-color 0.3s ease'
+              }}
+              onMouseEnter={(e) => {
+                if (opt.value === 1) e.target.style.backgroundColor = '#FF0000';
+                if (opt.value === 2) e.target.style.backgroundColor = '#ffb235';
+                if (opt.value === 3) e.target.style.backgroundColor = '#FFFF00';
+                if (opt.value === 4) e.target.style.backgroundColor = '#58d663';
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.backgroundColor = opt.value === 1 ? '#fff5f5' :
+                                                opt.value === 2 ? '#fff8f1' :
+                                                opt.value === 3 ? '#fefce8' :
+                                                '#f0fdf4';
+              }}
             >
               {opt.label}
             </button>
           ))}
-        </div>
-
-        {/* Botón siguiente */}
-        <div className="mt-8 text-right">
-          <button
-            onClick={() => {
-              if (currentPregunta < preguntasDelBloque.length - 1) {
-                setCurrentPregunta(currentPregunta + 1);
-              } else {
-                if (currentBloque < areas.length - 1) {
-                  setCurrentBloque(currentBloque + 1);
-                  setCurrentPregunta(0);
-                } else {
-                  setFinalizado(true);
-                }
-              }
-            }}
-            className="bg-primary-light text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-all"
-          >
-            Siguiente
-          </button>
         </div>
       </div>
     </QuestionnaireLayout>
