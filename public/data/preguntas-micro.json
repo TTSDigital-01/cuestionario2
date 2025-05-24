@@ -1,0 +1,429 @@
+[
+  {
+    "id": "area1-pregunta1",
+    "area": "Alfabetización Digital Básica",
+    "text": "¿Cómo se manejan los conocimientos básicos de computación en tu empresa?",
+    "options": [
+      {"value": 1, "label": "🔴 Ninguno de los miembros sabe usar una computadora o lo hace con mucha dificultad."},
+      {"value": 2, "label": "🟠 Algunos saben usar herramientas digitales, pero no todos."},
+      {"value": 3, "label": "🟡 Se usan herramientas básicas como WhatsApp, correo o redes sociales."},
+      {"value": 4, "label": "🟢 Se usan herramientas especializadas como Google Docs, Excel sencillo o plataformas de pago."}
+    ]
+  },
+  {
+    "id": "area1-pregunta2",
+    "area": "Alfabetización Digital Básica",
+    "text": "¿Cómo se capacita al equipo en el uso de herramientas digitales?",
+    "options": [
+      {"value": 1, "label": "🔴 No hay capacitación ni orientación formal."},
+      {"value": 2, "label": "🟠 Aprendizaje autodidacta o ayuda puntual entre empleados."},
+      {"value": 3, "label": "🟡 Se comparten tutoriales o guías sobre herramientas usadas."},
+      {"value": 4, "label": "🟢 Se brinda capacitación continua y se fomenta el aprendizaje digital."}
+    ]
+  },
+  {
+    "id": "area1-pregunta3",
+    "area": "Alfabetización Digital Básica",
+    "text": "¿Qué tipo de herramientas digitales se usan habitualmente?",
+    "options": [
+      {"value": 1, "label": "🔴 Ninguna o muy pocas herramientas digitales."},
+      {"value": 2, "label": "🟠 Herramientas básicas como WhatsApp, correo o redes sociales."},
+      {"value": 3, "label": "🟡 Uso de herramientas como Google Drive, Excel, plataformas de venta o facturación electrónica."},
+      {"value": 4, "label": "🟢 Uso de herramientas especializadas como CRM, ERP, sistemas de inventario o marketing automatizado."}
+    ]
+  },
+  {
+    "id": "area1-pregunta4",
+    "area": "Alfabetización Digital Básica",
+    "text": "¿Se registran y analizan las interacciones digitales para mejorar?",
+    "options": [
+      {"value": 1, "label": "🔴 No se guardan registros ni se analizan interacciones."},
+      {"value": 2, "label": "🟠 Algunas interacciones se registran manualmente (ej. hojas de cálculo)."},
+      {"value": 3, "label": "🟡 Se recopilan datos de comunicación digital para generar reportes básicos."},
+      {"value": 4, "label": "🟢 Se analizan patrones de comunicación y se toman decisiones basadas en ellos."}
+    ]
+  },
+  {
+    "id": "area1-pregunta5",
+    "area": "Alfabetización Digital Básica",
+    "text": "¿Tienen una firma digital o mensaje estándar para comunicarse con clientes (por ejemplo, saludos, datos de contacto, horarios)?",
+    "options": [
+      {"value": 1, "label": "🔴 No usamos ningún tipo de firma o mensaje estándar."},
+      {"value": 2, "label": "🟠 A veces copiamos y pegamos información manualmente (por ejemplo, el número de cuenta)."},
+      {"value": 3, "label": "🟡 Usamos mensajes predeterminados o firmas, pero no siempre ni en todos los canales."},
+      {"value": 4, "label": "🟢 Tenemos firmas o mensajes estándar bien diseñados y los usamos de forma consistente en todos los canales digitales."}
+    ]
+  },
+
+  {
+    "id": "area2-pregunta1",
+    "area": "Presencia en Línea",
+    "text": "¿Tu empresa tiene algún tipo de presencia en internet?",
+    "options": [
+      {"value": 1, "label": "🔴 No tenemos ningún tipo de presencia en internet."},
+      {"value": 2, "label": "🟠 Solo perfil en redes sociales sin información clara ni propósito comercial."},
+      {"value": 3, "label": "🟡 Tiene sitio web funcional o página de negocio en redes sociales."},
+      {"value": 4, "label": "🟢 Plataforma robusta con tienda online, contenido actualizado y experiencia de usuario optimizada."}
+    ]
+  },
+  {
+    "id": "area2-pregunta2",
+    "area": "Presencia en Línea",
+    "text": "¿Cómo se gestiona la interacción con clientes en canales digitales?",
+    "options": [
+      {"value": 1, "label": "🔴 Los canales están desactivados o son poco utilizados."},
+      {"value": 2, "label": "🟠 Se responden visualmente datos básicos (visitas, seguidores)."},
+      {"value": 3, "label": "🟡 Se usan herramientas de análisis como Google Analytics u otras."},
+      {"value": 4, "label": "🟢 Se realizan reportes frecuentes sobre tráfico, conversión y ROI de canales digitales."}
+    ]
+  },
+  {
+    "id": "area2-pregunta3",
+    "area": "Presencia en Línea",
+    "text": "¿Cómo se organiza la información de contacto en tu presencia digital?",
+    "options": [
+      {"value": 1, "label": "🔴 Datos de contacto incompletos o difíciles de encontrar."},
+      {"value": 2, "label": "🟠 Información básica de contacto, sin formulario ni respuesta rápida."},
+      {"value": 3, "label": "🟡 Página de contacto con formulario, horarios y redes sociales activas."},
+      {"value": 4, "label": "🟢 Chatbots integrados, soporte multicanal y atención inmediata a través de chat en tiempo real."}
+    ]
+  },
+  {
+    "id": "area2-pregunta4",
+    "area": "Presencia en Línea",
+    "text": "¿Tienes presencia en múltiples canales digitales?",
+    "options": [
+      {"value": 1, "label": "🔴 Solo un canal digital (ej. Facebook) y sin actualización."},
+      {"value": 2, "label": "🟠 Presencia en 2 canales, pero no tienen una estrategia coordinada."},
+      {"value": 3, "label": "🟡 Tienes presencia en 3 o más canales, con actualización periódica."},
+      {"value": 4, "label": "🟢 Presencia estratégica en todos los canales clave para tu sector."}
+    ]
+  },
+  {
+    "id": "area2-pregunta5",
+    "area": "Presencia en Línea",
+    "text": "¿La presencia en línea está adaptada para dispositivos móviles?",
+    "options": [
+      {"value": 1, "label": "🔴 El contenido se ve mal o no se adapta a celulares o tablets."},
+      {"value": 2, "label": "🟠 Solo las redes sociales se ven bien, pero el sitio web no está optimizado."},
+      {"value": 3, "label": "🟡 El sitio web y redes se visualizan bien en móviles, aunque sin pruebas regulares."},
+      {"value": 4, "label": "🟢 La presencia digital está completamente optimizada para móviles y se prueba regularmente."}
+    ]
+  },
+
+  {
+    "id": "area3-pregunta1",
+    "area": "Comunicación Interna y Externa",
+    "text": "¿Cómo se organiza la comunicación interna en la empresa?",
+    "options": [
+      {"value": 1, "label": "🔴 Todo es verbal o escrito en papel."},
+      {"value": 2, "label": "🟠 Uso limitado de correo o WhatsApp."},
+      {"value": 3, "label": "🟡 Uso de herramientas colaborativas como Google Workspace o Teams."},
+      {"value": 4, "label": "🟢 Comunicación integrada con sistemas operativos, flujos de trabajo y alertas automáticas."}
+    ]
+  },
+  {
+    "id": "area3-pregunta2",
+    "area": "Comunicación Interna y Externa",
+    "text": "¿Cómo se comunica con clientes y proveedores?",
+    "options": [
+      {"value": 1, "label": "🔴 Comunicación exclusivamente telefónica o presencial."},
+      {"value": 2, "label": "🟠 Uso de correo electrónico y redes sociales sin seguimiento."},
+      {"value": 3, "label": "🟡 Plataformas de contacto digital con gestión de tickets o chats."},
+      {"value": 4, "label": "🟢 Integración entre CRM, soporte digital y canales multicanal."}
+    ]
+  },
+  {
+    "id": "area3-pregunta3",
+    "area": "Comunicación Interna y Externa",
+    "text": "¿Cómo se gestionan las respuestas estándar o frecuentes en tu empresa?",
+    "options": [
+      {"value": 1, "label": "🔴 Todas las respuestas son manuales y sin formato establecido."},
+      {"value": 2, "label": "🟠 Usamos algunas plantillas básicas en Word o Excel."},
+      {"value": 3, "label": "🟡 Tenemos firmas de correo, respuestas predefinidas o plantillas compartidas."},
+      {"value": 4, "label": "🟢 Tenemos firmas o mensajes estándar bien diseñados y los usamos de forma consistente en todos los canales."}
+    ]
+  },
+
+  {
+    "id": "area4-pregunta1",
+    "area": "Marketing y Ventas Digitales",
+    "text": "¿Cómo se gestiona el marketing digital actualmente?",
+    "options": [
+      {"value": 1, "label": "🔴 No hacemos marketing digital."},
+      {"value": 2, "label": "🟠 Publicamos ocasionalmente en redes sociales sin planificación ni seguimiento."},
+      {"value": 3, "label": "🟡 Tenemos campañas planificadas, con objetivos y seguimiento básico."},
+      {"value": 4, "label": "🟢 Campañas de marketing digital con medición de resultados reales (conversiones, ROI, segmentación)."}
+    ]
+  },
+  {
+    "id": "area4-pregunta2",
+    "area": "Marketing y Ventas Digitales",
+    "text": "¿Cómo haces seguimiento a tus leads y oportunidades de venta?",
+    "options": [
+      {"value": 1, "label": "🔴 Sin sistema claro → todo es manual o anecdótico."},
+      {"value": 2, "label": "🟠 Registros en hojas de cálculo o libreta física."},
+      {"value": 3, "label": "🟡 Uso de listas de contactos o herramientas básicas de CRM."},
+      {"value": 4, "label": "🟢 Uso de herramientas de CRM con scoring automático de leads."}
+    ]
+  },
+  {
+    "id": "area4-pregunta3",
+    "area": "Marketing y Ventas Digitales",
+    "text": "¿Cómo se generan propuestas, presupuestos o cotizaciones?",
+    "options": [
+      {"value": 1, "label": "🔴 Todo se hace manualmente en papel o Word/Excel."},
+      {"value": 2, "label": "🟠 Se usan plantillas simples de cotización."},
+      {"value": 3, "label": "🟡 Se generan desde plataformas como PandaDoc o Canva Pro."},
+      {"value": 4, "label": "🟢 Se generan automáticamente desde el CRM o ERP."}
+    ]
+  },
+  {
+    "id": "area4-pregunta4",
+    "area": "Marketing y Ventas Digitales",
+    "text": "¿Cómo se cierra la venta y se entrega el producto o servicio?",
+    "options": [
+      {"value": 1, "label": "🔴 El cliente debe acudir personalmente."},
+      {"value": 2, "label": "🟠 Envío físico o digital del documento de venta."},
+      {"value": 3, "label": "🟡 Entrega digital del producto o servicio (ej. descarga, enlace de acceso)."},
+      {"value": 4, "label": "🟢 Proceso totalmente digitalizado: firma + pago + entrega + seguimiento automático."}
+    ]
+  },
+  {
+    "id": "area4-pregunta5",
+    "area": "Marketing y Ventas Digitales",
+    "text": "¿Tienen procesos para captar retroalimentación o satisfacción del cliente?",
+    "options": [
+      {"value": 1, "label": "🔴 No recogemos la opinión de nuestros clientes."},
+      {"value": 2, "label": "🟠 Recibimos comentarios informales, pero no los registramos."},
+      {"value": 3, "label": "🟡 Hacemos encuestas digitales o revisamos reseñas de forma puntual."},
+      {"value": 4, "label": "🟢 Capturamos y analizamos sistemáticamente la retroalimentación para mejorar servicios."}
+    ]
+  },
+
+  {
+    "id": "area5-pregunta1",
+    "area": "Gestión de Clientes (CRM)",
+    "text": "¿Cómo registran y organizan la información de sus clientes?",
+    "options": [
+      {"value": 1, "label": "🔴 No se registran datos de los clientes o lo hacen solo en papel."},
+      {"value": 2, "label": "🟠 Guardan algunos datos en archivos digitales básicos como Excel."},
+      {"value": 3, "label": "🟡 Se usan herramientas de CRM básicas con datos de contacto y compras anteriores."},
+      {"value": 4, "label": "🟢 Se usa un CRM avanzado con integración en ventas, soporte y comportamiento del cliente."}
+    ]
+  },
+  {
+    "id": "area5-pregunta2",
+    "area": "Gestión de Clientes (CRM)",
+    "text": "¿Cómo se relaciona con los clientes después de la compra?",
+    "options": [
+      {"value": 1, "label": "🔴 No hay relación posterior."},
+      {"value": 2, "label": "🟠 Se envían correos ocasionales de agradecimiento."},
+      {"value": 3, "label": "🟡 Se aplican encuestas NPS, emails post-venta o cupones digitales."},
+      {"value": 4, "label": "🟢 Programa de lealtad con recordatorios, puntos y beneficios."}
+    ]
+  },
+  {
+    "id": "area5-pregunta3",
+    "area": "Gestión de Clientes (CRM)",
+    "text": "¿Cómo se resuelven dudas o quejas de clientes?",
+    "options": [
+      {"value": 1, "label": "🔴 No hay proceso definido."},
+      {"value": 2, "label": "🟠 Las quejas se reciben por WhatsApp o correo y se atienden manualmente."},
+      {"value": 3, "label": "🟡 Se usan herramientas como ManyChat o Freshdesk para gestionar tickets."},
+      {"value": 4, "label": "🟢 Se usan herramientas de IA para resolver consultas recurrentes y derivar casos complejos."}
+    ]
+  },
+  {
+    "id": "area5-pregunta4",
+    "area": "Gestión de Clientes (CRM)",
+    "text": "¿Qué tan integrado está el seguimiento de clientes con otros procesos digitales?",
+    "options": [
+      {"value": 1, "label": "🔴 No hay integración, todo se gestiona por separado."},
+      {"value": 2, "label": "🟠 Se guardan datos localmente o en hojas de cálculo."},
+      {"value": 3, "label": "🟡 Se capturan leads mediante formularios web y se gestionan manualmente."},
+      {"value": 4, "label": "🟢 Leads gestionados mediante formularios web, campañas automatizadas y CRM integrado."}
+    ]
+  },
+
+  {
+    "id": "area6-pregunta1",
+    "area": "Digitalización de Procesos",
+    "text": "¿Qué procesos operativos están actualmente digitalizados?",
+    "options": [
+      {"value": 1, "label": "🔴 No hay procesos digitalizados, todo se hace manualmente."},
+      {"value": 2, "label": "🟠 Solo tareas aisladas están digitalizadas (por ejemplo, envío de correos, generación de facturas)."},
+      {"value": 3, "label": "🟡 Varios procesos clave están semi-digitalizados con herramientas simples."},
+      {"value": 4, "label": "🟢 La mayoría de los procesos operativos están digitalizados y conectados en un sistema único."}
+    ]
+  },
+  {
+    "id": "area6-pregunta2",
+    "area": "Digitalización de Procesos",
+    "text": "¿Cómo se identifican y corrigen errores operativos?",
+    "options": [
+      {"value": 1, "label": "🔴 Solo se detectan cuando generan reclamos o pérdidas visibles."},
+      {"value": 2, "label": "🟠 Se revisan visualmente datos básicos (ventas, gastos)."},
+      {"value": 3, "label": "🟡 Se recopilan datos de comunicación digital para generar reportes básicos."},
+      {"value": 4, "label": "🟢 Se analizan patrones de comunicación y se toman decisiones basadas en ellos."}
+    ]
+  },
+  {
+    "id": "area6-pregunta3",
+    "area": "Digitalización de Procesos",
+    "text": "¿Cómo se miden y optimizan los tiempos de ejecución de tareas administrativas?",
+    "options": [
+      {"value": 1, "label": "🔴 Las tareas toman mucho tiempo y dependen de intervención manual constante."},
+      {"value": 2, "label": "🟠 Se han reducido tiempos gracias a herramientas simples, pero siguen siendo repetitivas."},
+      {"value": 3, "label": "🟡 El tiempo se ha reducido sustancialmente gracias a automatización parcial."},
+      {"value": 4, "label": "🟢 Las tareas administrativas clave están automatizadas o centralizadas, completándose en minutos y sin errores."}
+    ]
+  },
+  {
+    "id": "area6-pregunta4",
+    "area": "Digitalización de Procesos",
+    "text": "¿Cómo se monitorea la satisfacción del cliente?",
+    "options": [
+      {"value": 1, "label": "🔴 No se monitorea satisfacción del cliente."},
+      {"value": 2, "label": "🟠 Se pide feedback ocasionalmente por WhatsApp o correo."},
+      {"value": 3, "label": "🟡 Se aplican encuestas post-compra con herramientas como Typeform o SurveyMonkey."},
+      {"value": 4, "label": "🟢 Se usan herramientas de análisis continuo de experiencia del cliente (ej. Delighted)."}
+    ]
+  },
+
+  {
+    "id": "area7-pregunta1",
+    "area": "Análisis de Datos",
+    "text": "¿Cómo se recolecta y organiza la información relevante?",
+    "options": [
+      {"value": 1, "label": "🔴 No se recolecta ni organiza información; las decisiones son intuitivas."},
+      {"value": 2, "label": "🟠 Se guardan algunos datos manualmente (en papel o hojas de cálculo)."},
+      {"value": 3, "label": "🟡 Se recopilan datos digitales básicos y se analizan ocasionalmente."},
+      {"value": 4, "label": "🟢 Se usan herramientas como Google Analytics o CRM para recolectar y organizar datos automáticamente."}
+    ]
+  },
+  {
+    "id": "area7-pregunta2",
+    "area": "Análisis de Datos",
+    "text": "¿Qué tipo de análisis se realiza sobre los datos recolectados?",
+    "options": [
+      {"value": 1, "label": "🔴 No se hace ningún análisis formal."},
+      {"value": 2, "label": "🟠 Se revisan visualmente datos básicos (ventas, tráfico, seguidores)."},
+      {"value": 3, "label": "🟡 Se generan reportes mensuales con indicadores clave como ventas, visitas o conversiones."},
+      {"value": 4, "label": "🟢 Se usan herramientas avanzadas como Power BI, Tableau o dashboards personalizados."}
+    ]
+  },
+  {
+    "id": "area7-pregunta3",
+    "area": "Análisis de Datos",
+    "text": "¿Cómo se usan los datos para tomar decisiones?",
+    "options": [
+      {"value": 1, "label": "🔴 Las decisiones se toman de forma intuitiva, sin base en datos."},
+      {"value": 2, "label": "🟠 Se usan datos históricos esporádicamente para tomar decisiones."},
+      {"value": 3, "label": "🟡 Se usan datos recientes para ajustar acciones puntuales."},
+      {"value": 4, "label": "🟢 Se usan modelos predictivos para anticipar necesidades y ofrecer soluciones proactivas."}
+    ]
+  },
+
+  {
+    "id": "area8-pregunta1",
+    "area": "Ciberseguridad",
+    "text": "¿Qué nivel de protección tienen los dispositivos y redes de la empresa?",
+    "options": [
+      {"value": 1, "label": "🔴 No hay protección activa (no antivirus, no contraseñas, no firewalls)."},
+      {"value": 2, "label": "🟠 Usan antivirus básicos y contraseñas débiles sin políticas definidas."},
+      {"value": 3, "label": "🟡 Tienen antivirus activos, contraseñas seguras y actualizaciones periódicas."},
+      {"value": 4, "label": "🟢 Además de lo anterior, tienen control de acceso, bloqueo automático y revisiones técnicas regulares."}
+    ]
+  },
+  {
+    "id": "area8-pregunta2",
+    "area": "Ciberseguridad",
+    "text": "¿Cómo se protege la información sensible de clientes y la empresa?",
+    "options": [
+      {"value": 1, "label": "🔴 No se resguarda ni respalda la información."},
+      {"value": 2, "label": "🟠 Se guardan respaldos manuales, pero no se revisan."},
+      {"value": 3, "label": "🟡 Se realizan respaldos periódicos y se almacenan en disco duro externo o nube básica."},
+      {"value": 4, "label": "🟢 Respaldos automatizados, versiones históricas y almacenamiento seguro en servidores redundantes."}
+    ]
+  },
+  {
+    "id": "area8-pregunta3",
+    "area": "Ciberseguridad",
+    "text": "¿El equipo está capacitado en buenas prácticas de seguridad digital?",
+    "options": [
+      {"value": 1, "label": "🔴 No se ha realizado ninguna capacitación ni se han establecido normas."},
+      {"value": 2, "label": "🟠 Se han dado indicaciones informales sobre cuidado de claves y navegación."},
+      {"value": 3, "label": "🟡 Se han compartido buenas prácticas y algunos empleados las aplican."},
+      {"value": 4, "label": "🟢 Todo el personal ha recibido capacitación formal sobre phishing, contraseñas y navegación segura."}
+    ]
+  },
+  {
+    "id": "area8-pregunta4",
+    "area": "Ciberseguridad",
+    "text": "¿Tienen procedimientos ante incidentes digitales (por ejemplo, pérdida de información, hackeo, fraude)?",
+    "options": [
+      {"value": 1, "label": "🔴 No hay protocolo definido."},
+      {"value": 2, "label": "🟠 Solo reaccionamos cuando ocurre un problema, sin un plan claro."},
+      {"value": 3, "label": "🟡 Tenemos pasos básicos definidos para casos comunes."},
+      {"value": 4, "label": "🟢 Contamos con protocolos, responsables y herramientas para actuar ante incidentes, además de evaluaciones periódicas de riesgos."}
+    ]
+  },
+
+  {
+    "id": "area9-pregunta1",
+    "area": "Estrategia Digital",
+    "text": "¿Tiene una estrategia digital documentada e integrada al modelo de negocio?",
+    "options": [
+      {"value": 1, "label": "🔴 No existe una estrategia digital definida."},
+      {"value": 2, "label": "🟠 Hay ideas sueltas sobre digitalización, pero no están documentadas ni ejecutadas."},
+      {"value": 3, "label": "🟡 Cuenta con un plan escrito de digitalización alineado a metas comerciales."},
+      {"value": 4, "label": "🟢 Estrategia digital sólida, con objetivos claros y revisiones periódicas de avance."}
+    ]
+  },
+  {
+    "id": "area9-pregunta2",
+    "area": "Estrategia Digital",
+    "text": "¿Cómo se priorizan las inversiones en tecnología digital?",
+    "options": [
+      {"value": 1, "label": "🔴 Las inversiones se hacen de forma reactiva, sin criterio estratégico."},
+      {"value": 2, "label": "🟠 Se invierte según disponibilidad o recomendaciones aisladas."},
+      {"value": 3, "label": "🟡 Hay criterios claros para priorizar inversión en tecnología digital."},
+      {"value": 4, "label": "🟢 Se aplican métricas de retorno de inversión digital y se evalúan antes de invertir."}
+    ]
+  },
+  {
+    "id": "area9-pregunta3",
+    "area": "Estrategia Digital",
+    "text": "¿Cómo se comunican y alinean los objetivos digitales?",
+    "options": [
+      {"value": 1, "label": "🔴 No hay comunicación ni alineación sobre objetivos digitales."},
+      {"value": 2, "label": "🟠 Se mencionan oportunamente en reuniones, pero sin seguimiento."},
+      {"value": 3, "label": "🟡 Se comunican claramente y hay responsables asignados."},
+      {"value": 4, "label": "🟢 Se revisan periódicamente y se ajustan según resultados obtenidos."}
+    ]
+  },
+
+  {
+    "id": "area10-pregunta1",
+    "area": "Innovación Digital",
+    "text": "¿Cómo se introducen nuevas tecnologías en tu negocio?",
+    "options": [
+      {"value": 1, "label": "🔴 No se introduce ninguna tecnología nueva."},
+      {"value": 2, "label": "🟠 Se adquieren por impulso o recomendación puntual, sin prueba previa."},
+      {"value": 3, "label": "🟡 Se prueban en proyectos pequeños antes de escalar."},
+      {"value": 4, "label": "🟢 Se integran nuevas tecnologías de forma planificada y escalable."}
+    ]
+  },
+  {
+    "id": "area10-pregunta2",
+    "area": "Innovación Digital",
+    "text": "¿Cómo se adapta a nuevos entornos digitales?",
+    "options": [
+      {"value": 1, "label": "🔴 La empresa prefiere mantenerse igual y resistir los cambios."},
+      {"value": 2, "label": "🟠 Se adapta solo cuando es necesario y con ayuda externa."},
+      {"value": 3, "label": "🟡 Ha realizado pequeños ajustes digitales por iniciativa propia."},
+      {"value": "label", "label": "🟢 Busca activamente nuevas tendencias y se adapta rápidamente a cambios tecnológicos."}
+    ]
+  }
+]
