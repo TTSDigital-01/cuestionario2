@@ -11,6 +11,11 @@ export default function MadurezDigitalPage() {
   const [respuestas, setRespuestas] = useState({});
   const [finalizado, setFinalizado] = useState(false);
 
+  // Datos iniciales del cliente
+  const [nombre, setNombre] = useState('');
+  const [empresa, setEmpresa] = useState('');
+  const [email, setEmail] = useState('');
+
   // Extraer bloques únicos (áreas)
   const [areas, setAreas] = useState([]);
 
@@ -21,43 +26,61 @@ export default function MadurezDigitalPage() {
     }
   }, [preguntas]);
 
-  const cargarPreguntas = () => {
-    fetch('/data/preguntas-micro.json')
-      .then(res => res.json())
-      .then(data => {
-        setPreguntas(data);
-      });
-  };
+  // Recuperar datos desde sessionStorage si existen
+  React.useEffect(() => {
+    const clienteData = sessionStorage.getItem('cliente');
+    if (clienteData) {
+      const parsed = JSON.parse(clienteData);
+      setNombre(parsed.nombre || '');
+      setEmpresa(parsed.empresa || '');
+      setEmail(parsed.email || '');
+    }
+  }, []);
 
-  if (!tamañoSeleccionado) {
+  if (!nombre || !empresa || !email) {
     return (
       <QuestionnaireLayout>
         <div className="flex flex-col items-center justify-center min-h-[70vh] p-6 bg-white">
           <img src="/logo-sf-1.png" alt="Logo TTS Digital" className="h-24 mb-8" />
 
-          {/* Página de inicio */}
-          <h1 className="text-3xl md:text-4xl font-bold text-primary-dark mb-6 text-center max-w-xl px-4">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#1E3A8A] mb-6 text-center max-w-xl px-4">
             Evalúa tu nivel de madurez digital
           </h1>
 
-          <p className="text-lg text-text-dark_gray max-w-md mx-auto mb-10">
+          <p className="text-lg text-[#4A4A4A] mb-8 max-w-md">
             Selecciona el tamaño de tu empresa para comenzar.
           </p>
 
+          {/* Botones por tamaño */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-3xl mx-auto mt-6">
             <button
               onClick={() => {
                 setTamañoSeleccionado('micro');
-                cargarPreguntas();
+                fetch('/data/preguntas-micro.json')
+                  .then(res => res.json())
+                  .then(data => {
+                    setPreguntas(data);
+                  });
               }}
-              className="bg-primary-light text-white px-6 py-4 rounded-full hover:bg-blue-600 transition-all"
+              className="bg-[#0087D1] text-white px-6 py-4 rounded-full hover:bg-blue-600 transition-all"
             >
               Microempresa<br />
               <small className="opacity-80">(1–9 empleados)</small>
             </button>
 
             <button
-              onClick={() => alert("Próximamente: Preguntas para pequeñas empresas")}
+              onClick={() => {
+                setTamañoSeleccionado('pequeña');
+                fetch('/data/preguntas-pequenas.json')
+                  .then(res => res.json())
+                  .then(data => {
+                    setPreguntas(data);
+                  })
+                  .catch(err => {
+                    console.error('Error al cargar preguntas:', err);
+                    alert("No se pudieron cargar las preguntas para Pequeña Empresa.");
+                  });
+              }}
               className="bg-gray-400 text-white px-6 py-4 rounded-full hover:bg-gray-500 transition-all"
             >
               Pequeña Empresa<br />
@@ -65,8 +88,102 @@ export default function MadurezDigitalPage() {
             </button>
 
             <button
-              onClick={() => alert("Próximamente: Preguntas para medianas empresas")}
-              className="bg-gold text-[#1A1A1A] px-6 py-4 rounded-full hover:bg-yellow-400 transition-all"
+              onClick={() => {
+                setTamañoSeleccionado('mediana');
+                fetch('/data/preguntas-medianas.json')
+                  .then(res => {
+                    if (!res.ok) throw new Error('Error al cargar preguntas-medianas.json');
+                    return res.json();
+                  })
+                  .then(data => {
+                    setPreguntas(data);
+                  })
+                  .catch(err => {
+                    console.error('Error al cargar preguntas:', err);
+                    alert("No se pudieron cargar las preguntas para Mediana Empresa.");
+                  });
+              }}
+              className="bg-gold text-[#1E3A8A] px-6 py-4 rounded-full hover:bg-yellow-400 transition-all"
+            >
+              Mediana Empresa<br />
+              <small className="opacity-80">(50–200 empleados)</small>
+            </button>
+          </div>
+        </div>
+      </QuestionnaireLayout>
+    );
+  }
+
+  // Pantalla intermedia – ¡Gracias por tu interés!
+  if (!tamañoSeleccionado) {
+    return (
+      <QuestionnaireLayout>
+        <div className="flex flex-col items-center justify-center min-h-[70vh] p-6 bg-white">
+          {/* Logo */}
+          <img src="/icono-v1.svg" alt="Ícono TTS Digital" className="h-12 mb-6" />
+
+          {/* Mensaje principal */}
+          <h2 className="text-2xl md:text-3xl font-bold text-[#1E3A8A] mb-4 text-center">
+            ¡Gracias por tu interés!
+          </h2>
+
+          <p className="text-lg text-[#4A4A4A] mb-8 max-w-md text-center">
+            Completar tu evaluación te tomará 10 minutos.
+          </p>
+
+          {/* Botones por tamaño */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full max-w-3xl mx-auto mt-6">
+            <button
+              onClick={() => {
+                setTamañoSeleccionado('micro');
+                fetch('/data/preguntas-micro.json')
+                  .then(res => res.json())
+                  .then(data => {
+                    setPreguntas(data);
+                  });
+              }}
+              className="bg-[#0087D1] text-white px-6 py-4 rounded-full hover:bg-blue-600 transition-all"
+            >
+              Microempresa<br />
+              <small className="opacity-80">(1–9 empleados)</small>
+            </button>
+
+            <button
+              onClick={() => {
+                setTamañoSeleccionado('pequeña');
+                fetch('/data/preguntas-pequenas.json')
+                  .then(res => res.json())
+                  .then(data => {
+                    setPreguntas(data);
+                  })
+                  .catch(err => {
+                    console.error('Error al cargar preguntas:', err);
+                    alert("No se pudieron cargar las preguntas para Pequeña Empresa.");
+                  });
+              }}
+              className="bg-gray-400 text-white px-6 py-4 rounded-full hover:bg-gray-500 transition-all"
+            >
+              Pequeña Empresa<br />
+              <small className="opacity-80">(10–49 empleados)</small>
+            </button>
+
+            <button
+              onClick={() => {
+                setTamañoSeleccionado('mediana');
+                fetch('/data/preguntas-medianas.json')
+                  .then(res => {
+                    if (!res.ok) throw new Error('Error al cargar preguntas-medianas.json');
+                    return res.json();
+                  })
+                  .then(data => {
+                    setPreguntas(data);
+                  })
+                  .catch(err => {
+                    console.error('Error al cargar preguntas:', err);
+                    alert("No se pudieron cargar las preguntas para Mediana Empresa.");
+                  });
+              }}
+              className="bg-gold text-[#1E3A8A] px-6 py-4 rounded-full hover:bg-yellow-400 transition-all"
             >
               Mediana Empresa<br />
               <small className="opacity-80">(50–200 empleados)</small>
@@ -82,9 +199,9 @@ export default function MadurezDigitalPage() {
       <QuestionnaireLayout>
         <div className="flex flex-col items-center justify-center min-h-[70vh] p-6 bg-white">
           <img src="/logo-sf-1.png" alt="TTS Digital" className="h-24 mb-8" />
-          <p className="text-xl font-semibold text-primary-dark mb-6">Cargando cuestionario...</p>
+          <p className="text-xl font-semibold text-[#1E3A8A] mb-6">Cargando cuestionario...</p>
           <div className="w-full max-w-md h-2 bg-gray-200 rounded-full overflow-hidden">
-            <div className="h-full bg-primary-dark w-1/4 animate-pulse"></div>
+            <div className="h-full bg-[#0087D1] w-1/4 animate-pulse"></div>
           </div>
         </div>
       </QuestionnaireLayout>
@@ -135,8 +252,8 @@ export default function MadurezDigitalPage() {
     return (
       <QuestionnaireLayout>
         <div className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md border border-gray-200">
-          <h2 className="text-2xl font-bold text-primary-dark mb-6">Diagnóstico Preliminar</h2>
-          <p className="mb-8 text-text-dark_gray">
+          <h2 className="text-2xl font-bold text-[#1E3A8A] mb-6">Diagnóstico Preliminar</h2>
+          <p className="mb-8 text-[#4A4A4A]">
             ¡Has completado el cuestionario! A continuación, se muestran tus resultados por área.
           </p>
 
@@ -144,29 +261,31 @@ export default function MadurezDigitalPage() {
           <table className="w-full table-auto mb-8">
             <thead>
               <tr className="bg-gray-100">
-                <th className="px-4 py-2 text-left text-primary-dark font-semibold">Área Evaluada</th>
-                <th className="px-4 py-2 text-center text-primary-dark font-semibold">Puntaje</th>
-                <th className="px-4 py-2 text-center text-primary-dark font-semibold">Nivel de Madurez</th>
+                <th className="px-4 py-2 text-left text-[#1E3A8A] font-semibold">Área Evaluada</th>
+                <th className="px-4 py-2 text-center text-[#1E3A8A] font-semibold">Puntaje</th>
+                <th className="px-4 py-2 text-center text-[#1E3A8A] font-semibold">Nivel de Madurez</th>
               </tr>
             </thead>
             <tbody>
               {resultadosPorArea.map((resultado, idx) => (
                 <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                  <td className="border px-4 py-2 text-text-dark_gray">{resultado.area}</td>
-                  <td className="border px-4 py-2 text-center text-text-dark_gray">{resultado.promedio}</td>
+                  <td className="border px-4 py-2 text-[#4A4A4A]">{resultado.area}</td>
+                  <td className="border px-4 py-2 text-center text-[#4A4A4A]">{resultado.promedio}</td>
                   <td className="border px-4 py-2 text-center">{resultado.nivel}</td>
                 </tr>
               ))}
             </tbody>
           </table>
 
-          {/* Botón provisional */}
+          {/* Botón final */}
           <div className="mt-6 text-center">
             <button
-              onClick={() => alert("Próximamente: Enviar resultados a Google Sheets")}
-              className="bg-primary-light text-white px-6 py-3 rounded-full hover:bg-blue-600 transition-all"
+              onClick={() => {
+                alert("Redirigiendo a /informe...");
+              }}
+              className="bg-[#FFD700] text-[#1E3A8A] px-6 py-3 rounded-full hover:bg-yellow-400 transition-all"
             >
-              Enviar Resultados por Correo
+              Generar Informe
             </button>
           </div>
         </div>
@@ -178,10 +297,10 @@ export default function MadurezDigitalPage() {
     return (
       <QuestionnaireLayout>
         <div className="flex flex-col items-center justify-center min-h-[70vh] p-6 bg-white">
-          <p className="text-xl font-semibold text-primary-dark mb-6">
+          <p className="text-xl font-semibold text-[#1E3A8A] mb-6">
             Cargando pregunta {currentPregunta + 1} del bloque {currentBloque + 1}
           </p>
-          <p className="text-lg text-text-dark_gray mb-10">
+          <p className="text-lg text-[#4A4A4A] mb-10">
             Estamos preparando tu evaluación...
           </p>
         </div>
@@ -195,13 +314,13 @@ export default function MadurezDigitalPage() {
 
         {/* Barra de Progreso */}
         <div className="mb-8">
-          <div className="flex justify-between text-sm text-primary-dark font-medium">
+          <div className="flex justify-between text-sm text-[#1E3A8A] font-medium">
             <span>Bloque {currentBloque + 1} de {areas.length}</span>
             <span>{areas[currentBloque]}</span>
           </div>
           <div className="mt-2 w-full bg-gray-200 rounded-full h-2 overflow-hidden">
             <div
-              className="h-full bg-primary-light"
+              className="h-full bg-[#0087D1]"
               style={{ width: `${((currentBloque + 1) / areas.length) * 100}%` }}
             ></div>
           </div>
@@ -244,9 +363,9 @@ export default function MadurezDigitalPage() {
               }}
               onMouseLeave={(e) => {
                 e.target.style.backgroundColor = opt.value === 1 ? '#fff5f5' :
-                                                opt.value === 2 ? '#fff8f1' :
-                                                opt.value === 3 ? '#fefce8' :
-                                                '#f0fdf4';
+                                              opt.value === 2 ? '#fff8f1' :
+                                              opt.value === 3 ? '#fefce8' :
+                                              '#f0fdf4';
               }}
             >
               {opt.label}
