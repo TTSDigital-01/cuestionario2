@@ -1,3 +1,58 @@
+/* styles/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply font-sans text-text-light-gray bg-background;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1E3A8A; /* text-primary-dark */
+}
+
+button {
+  @apply font-medium rounded-md transition-all duration-300;
+}
+
+input[type="radio"] {
+  accent-color: #FFD700;
+}
+
+/* Clases personalizadas con valores explícitos */
+
+.bg-primary-dark {
+  background-color: #1E3A8A;
+}
+
+.text-primary-dark {
+  color: #1E3A8A;
+}
+
+.bg-primary-light {
+  background-color: #0087D1;
+}
+
+.text-primary-light {
+  color: #0087D1;
+}
+
+.bg-gold {
+  background-color: #FFD700;
+}
+
+.text-gold {
+  color: #FFD700;
+}
+
+.text-dark-gray {
+  color: #4A4A4A;
+}
+
+.text-light-gray {
+  color: #666666;
+}
+
+.background {
+  background-color: #D8D8D8;
+}

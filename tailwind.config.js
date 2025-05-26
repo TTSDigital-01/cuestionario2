@@ -1,3 +1,4 @@
+// tailwind.config.js
 module.exports = {
   content: [
     "./pages/**/*.{js,jsx,ts,tsx}",
@@ -6,14 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary-dark": "#1E3A8A", // Azul oscuro
-        "primary-light": "#0087D1", // Azul cerúleo
-        gold: "#FFD700", // Oro
-        "background": "#D8D8D8", // Fondo gris claro
-        "text-dark-gray": "#1A1A1A",
-        "text-light-gray": "#666666"
+        'primary-dark': '#1E3A8A',
+        'primary-light': '#0087D1',
+        gold: '#FFD700',
+        'text-dark-gray': '#4A4A4A',
+        'text-light-gray': '#666666',
+        background: '#D8D8D8'
       }
     },
   },
-  plugins: [],
-};
+  plugins: []
+}

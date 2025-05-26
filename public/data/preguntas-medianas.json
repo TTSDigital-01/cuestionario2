@@ -2,34 +2,34 @@
   {
     "id": 1,
     "area": "Personas y Habilidades Digitales",
-    "text": "¿Cómo se desarrolla la alfabetización digital del equipo?",
+    "text": "¿Cómo se evalúa y desarrolla la alfabetización digital del equipo?",
     "options": [
-      { "value": 1, "label": "No hay desarrollo; uso básico o nulo.", "color": "🔴" },
-      { "value": 2, "label": "Algunos empleados tienen conocimientos técnicos limitados.", "color": "🟠" },
-      { "value": 3, "label": "Se brinda capacitación básica periódica en herramientas digitales.", "color": "🟡" },
-      { "value": 4, "label": "Existe planificación estratégica de habilidades digitales y programas de formación continuos.", "color": "🟢" }
+      { "value": 1, "label": "No hay evaluación ni desarrollo.", "color": "🔴" },
+      { "value": 2, "label": "Se identifica informalmente; sin formación sistemática.", "color": "🟠" },
+      { "value": 3, "label": "Hay formación periódica y evaluación básica.", "color": "🟡" },
+      { "value": 4, "label": "Existe planificación estratégica de habilidades digitales, evaluación formal y programas de capacitación personalizados.", "color": "🟢" }
     ]
   },
   {
     "id": 2,
     "area": "Personas y Habilidades Digitales",
-    "text": "¿Qué tipo de roles tecnológicos tiene la empresa?",
+    "text": "¿Qué tipo de roles especializados en tecnología tiene la empresa?",
     "options": [
-      { "value": 1, "label": "No hay roles tecnológicos definidos.", "color": "🔴" },
-      { "value": 2, "label": "Solo hay un encargado informal de temas técnicos.", "color": "🟠" },
-      { "value": 3, "label": "Hay un rol dedicado a tecnología y soporte técnico.", "color": "🟡" },
-      { "value": 4, "label": "La empresa cuenta con equipos especializados en desarrollo de software, infraestructura y análisis de datos.", "color": "🟢" }
+      { "value": 1, "label": "No existen roles dedicados a tecnología o análisis digital.", "color": "🔴" },
+      { "value": 2, "label": "Algunos empleados tienen conocimientos técnicos pero no es su función principal.", "color": "🟠" },
+      { "value": 3, "label": "Hay roles definidos en áreas como TI, BI o analítica.", "color": "🟡" },
+      { "value": 4, "label": "Cuenta con equipos especializados en áreas tecnológicas críticas (desarrollo, seguridad, inteligencia artificial, etc.).", "color": "🟢" }
     ]
   },
   {
     "id": 3,
     "area": "Personas y Habilidades Digitales",
-    "text": "¿Cómo se evalúa y mejora el conocimiento digital del equipo?",
+    "text": "¿Cómo se promueve una cultura digital dentro de la organización?",
     "options": [
-      { "value": 1, "label": "No se evalúan habilidades digitales.", "color": "🔴" },
-      { "value": 2, "label": "Se asignan tareas digitales sin evaluación formal.", "color": "🟠" },
-      { "value": 3, "label": "Se realizan evaluaciones básicas de desempeño digital.", "color": "🟡" },
-      { "value": 4, "label": "Las competencias digitales se evalúan regularmente y se alinean a planes de carrera.", "color": "🟢" }
+      { "value": 1, "label": "No hay incentivos ni políticas relacionadas con la innovación o adopción digital.", "color": "🔴" },
+      { "value": 2, "label": "Algunos líderes promueven el uso de herramientas digitales de forma informal.", "color": "🟠" },
+      { "value": 3, "label": "Se fomenta el aprendizaje digital mediante talleres, mentorías o espacios colaborativos.", "color": "🟡" },
+      { "value": 4, "label": "La cultura digital está integrada en los valores de la empresa, con incentivos claros y metodologías ágiles.", "color": "🟢" }
     ]
   },
   {
@@ -50,7 +50,7 @@
     "options": [
       { "value": 1, "label": "Solo presencia mínima o inexistente.", "color": "🔴" },
       { "value": 2, "label": "Sitio básico sin funcionalidad de ventas o interacción.", "color": "🟠" },
-      { "value": 3, "label": "Tiene sitio web funcional o página de negocio en redes sociales.", "color": "🟡" },
+      { "value": 3, "label": "Tiene sitio web funcional y presencia activa en redes sociales.", "color": "🟡" },
       { "value": 4, "label": "Plataforma robusta con tienda online, contenido actualizado y experiencia de usuario optimizada.", "color": "🟢" }
     ]
   },
@@ -59,65 +59,65 @@
     "area": "Presencia y Canales Digitales",
     "text": "¿Cómo se gestionan las interacciones en canales digitales?",
     "options": [
-      { "value": 1, "label": "Todo queda en el chat o se pierde fácilmente.", "color": "🔴" },
-      { "value": 2, "label": "Guardamos capturas o reenviamos información importante, pero sin orden.", "color": "🟠" },
-      { "value": 3, "label": "Archivamos manualmente o copiamos mensajes clave en documentos o hojas de cálculo.", "color": "🟡" },
-      { "value": 4, "label": "Contamos con una herramienta sistematizada de registro: CRM, Drive organizado, correo empresarial, etc.", "color": "🟢" }
+      { "value": 1, "label": "Los canales están desactivos o son poco utilizados.", "color": "🔴" },
+      { "value": 2, "label": "Se responden mensajes de manera reactiva y sin protocolo.", "color": "🟠" },
+      { "value": 3, "label": "Se monitorea la interacción y se responde de forma programada.", "color": "🟡" },
+      { "value": 4, "label": "Existen chatbots, atención automatizada y respuesta proactiva en tiempo real.", "color": "🟢" }
     ]
   },
   {
     "id": 7,
     "area": "Presencia y Canales Digitales",
-    "text": "¿La experiencia móvil de tu presencia digital es buena?",
+    "text": "¿Cómo se mide el impacto de la presencia digital en el negocio?",
     "options": [
-      { "value": 1, "label": "No, el sitio no funciona bien en móviles.", "color": "🔴" },
-      { "value": 2, "label": "Funciona en redes sociales, pero el sitio web no está optimizado.", "color": "🟠" },
-      { "value": 3, "label": "El sitio web y redes se visualizan bien en móviles, aunque no hay pruebas regulares.", "color": "🟡" },
-      { "value": "4", "label": "Todo el ecosistema digital está diseñado y probado para óptima experiencia en móviles.", "color": "🟢" }
+      { "value": 1, "label": "No se miden métricas ni se analiza el impacto.", "color": "🔴" },
+      { "value": 2, "label": "Se revisan visualmente datos básicos (visitas, seguidores).", "color": "🟠" },
+      { "value": 3, "label": "Se usan herramientas de análisis como Google Analytics u otras.", "color": "🟡" },
+      { "value": 4, "label": "Se realizan reportes frecuentes sobre tráfico, conversión y ROI de canales digitales.", "color": "🟢" }
     ]
   },
   {
     "id": 8,
     "area": "Comunicación Interna y Externa",
-    "text": "¿Cómo se organiza la comunicación interna en tu empresa?",
+    "text": "¿Cómo se organiza la comunicación interna en la empresa?",
     "options": [
       { "value": 1, "label": "Todo es verbal o escrito en papel.", "color": "🔴" },
       { "value": 2, "label": "Uso limitado de correo o WhatsApp.", "color": "🟠" },
-      { "value": 3, "label": "Usamos herramientas colaborativas como Google Workspace o Teams.", "color": "🟡" },
-      { "value": 4, "label": "La comunicación integrada con sistemas operativos, flujos de trabajo y alertas automáticas.", "color": "🟢" }
+      { "value": 3, "label": "Uso de herramientas colaborativas como Teams, Slack o Google Workspace.", "color": "🟡" },
+      { "value": 4, "label": "Comunicación integrada con sistemas operativos, flujos de trabajo y alertas automáticas.", "color": "🟢" }
     ]
   },
   {
     "id": 9,
     "area": "Comunicación Interna y Externa",
-    "text": "¿Cómo se comunican con clientes y proveedores?",
+    "text": "¿Cómo se comunica con clientes y proveedores?",
     "options": [
       { "value": 1, "label": "Comunicación exclusivamente telefónica o presencial.", "color": "🔴" },
-      { "value": 2, "label": "Uso de correo electrónico y redes sociales sin seguimiento ni estructura.", "color": "🟠" },
-      { "value": 3, "label": "Intercambiamos archivos por mensajería segura y usamos plataformas de firma digital.", "color": "🟡" },
-      { "value": 4, "label": "Integramos herramientas de firma, coordinación y entrega digital de documentos.", "color": "🟢" }
+      { "value": 2, "label": "Uso de correo electrónico y redes sociales sin seguimiento.", "color": "🟠" },
+      { "value": 3, "label": "Plataformas de contacto digital con gestión de tickets o chats.", "color": "🟡" },
+      { "value": 4, "label": "Integración entre CRM, soporte digital y canales de comunicación multicanal.", "color": "🟢" }
     ]
   },
   {
     "id": 10,
+    "area": "Comunicación Interna y Externa",
+    "text": "¿Cómo se asegura la consistencia en la comunicación entre áreas?",
+    "options": [
+      { "value": 1, "label": "No hay coordinación clara; información dispersa.", "color": "🔴" },
+      { "value": 2, "label": "Se comparte información ocasionalmente por correo.", "color": "🟠" },
+      { "value": 3, "label": "Se usan herramientas compartidas para mantener consistencia.", "color": "🟡" },
+      { "value": 4, "label": "Se integra la comunicación interna y externa en un sistema único (ERP, CRM, intranet corporativa).", "color": "🟢" }
+    ]
+  },
+  {
+    "id": 11,
     "area": "Comunicación Interna y Externa",
     "text": "¿Se registran y analizan las interacciones digitales para mejorar?",
     "options": [
       { "value": 1, "label": "No se guardan registros ni se analizan interacciones.", "color": "🔴" },
       { "value": 2, "label": "Algunas interacciones se registran manualmente.", "color": "🟠" },
       { "value": 3, "label": "Se recopilan datos de comunicación digital para generar reportes básicos.", "color": "🟡" },
-      { "value": 4, "label": "Analizamos patrones de comunicación y tomamos decisiones basadas en ellos.", "color": "🟢" }
-    ]
-  },
-  {
-    "id": 11,
-    "area": "Comunicación Interna y Externa",
-    "text": "¿Cómo se identifican y corrigen errores operativos?",
-    "options": [
-      { "value": 1, "label": "Solo se detectan cuando generan reclamos o pérdidas visibles.", "color": "🔴" },
-      { "value": 2, "label": "Se revisan periódicamente con esfuerzo manual.", "color": "🟠" },
-      { "value": 3, "label": "El sistema alerta automáticamente sobre inconsistencias.", "color": "🟡" },
-      { "value": 4, "label": "La empresa cuenta con monitoreo continuo, alertas automáticas y acciones correctivas programadas.", "color": "🟢" }
+      { "value": 4, "label": "Se analizan patrones de comunicación y se toman decisiones basadas en ellos.", "color": "🟢" }
     ]
   },
   {
@@ -138,74 +138,74 @@
     "options": [
       { "value": 1, "label": "No se ejecutan campañas.", "color": "🔴" },
       { "value": 2, "label": "Campañas manuales sin segmentación ni seguimiento.", "color": "🟠" },
-      { "value": 3, "label": "Campañas planificadas, con objetivos y seguimiento básico.", "color": "🟡" },
-      { "value": 4, "label": "Tenemos un enfoque estratégico con programación de publicaciones, anuncios pagados y análisis de resultados.", "color": "🟢" }
+      { "value": 3, "label": "Uso de herramientas como Mailchimp, Facebook Ads o Google Ads.", "color": "🟡" },
+      { "value": 4, "label": "Automatización de campañas, personalización y medición continua.", "color": "🟢" }
     ]
   },
   {
     "id": 14,
     "area": "Marketing y Ventas Digitales",
-    "text": "¿Cómo se identifican y capturan leads interesados en productos o servicios?",
+    "text": "¿Cómo se convierte el tráfico digital en ventas?",
     "options": [
-      { "value": 1, "label": "No identificamos ni capturamos leads digitalmente.", "color": "🔴" },
-      { "value": 2, "label": "Los leads vienen solo por recomendación o contacto directo.", "color": "🟠" },
-      { "value": 3, "label": "Usamos landing pages, chatbots y formularios básicos para capturar interés.", "color": "🟡" },
-      { "value": 4, "label": "Contamos con un sistema integrado de generación de leads (webinars, retargeting, remarketing).", "color": "🟢" }
+      { "value": 1, "label": "No hay tráfico digital significativo.", "color": "🔴" },
+      { "value": 2, "label": "Tráfico sin conversión definida ni seguimiento.", "color": "🟠" },
+      { "value": 3, "label": "Se usan landing pages y formularios simples.", "color": "🟡" },
+      { "value": 4, "label": "Se aplican técnicas de UX/UI, remarketing y funnel analytics.", "color": "🟢" }
     ]
   },
   {
     "id": 15,
     "area": "Marketing y Ventas Digitales",
-    "text": "¿Cómo se usan las herramientas digitales para promoción o publicidad?",
+    "text": "¿Cómo se miden los resultados del marketing digital?",
     "options": [
-      { "value": 1, "label": "No usamos ninguna herramienta digital para promocionar el negocio.", "color": "🔴" },
-      { "value": 2, "label": "Hacemos publicaciones puntuales en redes, sin planificación.", "color": "🟠" },
-      { "value": 3, "label": "Usamos herramientas gratuitas o apps para diseño y envío de contenido.", "color": "🟡" },
-      { "value": 4, "label": "Tenemos un enfoque estratégico con herramientas de diseño, programación de publicaciones y análisis de resultados.", "color": "🟢" }
+      { "value": 1, "label": "No se miden resultados.", "color": "🔴" },
+      { "value": 2, "label": "Se revisan datos de forma ocasional y sin profundidad.", "color": "🟠" },
+      { "value": 3, "label": "Se generan reportes mensuales con indicadores clave.", "color": "🟡" },
+      { "value": 4, "label": "Dashboards en tiempo real y análisis predictivo de rendimiento.", "color": "🟢" }
     ]
   },
   {
     "id": 16,
     "area": "Marketing y Ventas Digitales",
-    "text": "¿Cómo se resuelven las incidencias o dudas del cliente?",
+    "text": "¿Cómo se ajusta la estrategia según los resultados obtenidos?",
     "options": [
-      { "value": 1, "label": "Sin proceso establecido.", "color": "🔴" },
-      { "value": 2, "label": "Se atiende en base a disponibilidad y memoria.", "color": "🟠" },
-      { "value": 3, "label": "Se asignan casos y se registran en sistema básico.", "color": "🟡" },
-      { "value": 4, "label": "Se usa sistema automatizado de resolución, con encuestas y feedback continuo.", "color": "🟢" }
+      { "value": 1, "label": "No hay ajuste; todo es estático.", "color": "🔴" },
+      { "value": 2, "label": "Se hacen cambios puntuales sin base en datos.", "color": "🟠" },
+      { "value": 3, "label": "Se revisan datos y se ajustan campañas manualmente.", "color": "🟡" },
+      { "value": 4, "label": "Se ajustan automáticamente campañas basándose en IA, test A/B y modelos predictivos.", "color": "🟢" }
     ]
   },
-  {
+    {
     "id": 17,
     "area": "Experiencia y Relación con el Cliente",
-    "text": "¿Cómo se registra y organiza la información de los clientes?",
+    "text": "¿Cómo se gestiona la relación con los clientes?",
     "options": [
-      { "value": 1, "label": "No se registra información.", "color": "🔴" },
-      { "value": 2, "label": "Se guardan datos en archivos locales o hojas de cálculo compartidas.", "color": "🟠" },
-      { "value": 3, "label": "Usamos herramientas empresariales como Google Workspace o CRM básico.", "color": "🟡" },
-      { "value": 4, "label": "La información de clientes está completamente digitalizada e integrada con ventas y servicio postventa.", "color": "🟢" }
+      { "value": 1, "label": "No hay herramientas de gestión de clientes.", "color": "🔴" },
+      { "value": 2, "label": "Se usan hojas de cálculo o archivos locales.", "color": "🟠" },
+      { "value": 3, "label": "Se usa software de CRM básico o herramientas simples.", "color": "🟡" },
+      { "value": 4, "label": "Se usa CRM avanzado con integración en múltiples canales y automatización de procesos.", "color": "🟢" }
     ]
   },
   {
     "id": 18,
     "area": "Experiencia y Relación con el Cliente",
-    "text": "¿Cómo personaliza la experiencia del cliente?",
+    "text": "¿Cómo se personaliza la experiencia del cliente?",
     "options": [
       { "value": 1, "label": "No hay personalización.", "color": "🔴" },
-      { "value": 2, "label": "Usamos datos básicos como nombre y preferencias generales.", "color": "🟠" },
-      { "value": 3, "label": "Enviamos ofertas personalizadas según comportamiento reciente.", "color": "🟡" },
-      { "value": 4, "label": "Usamos sistema automatizado de resolución, encuestas y feedback continuo.", "color": "🟢" }
+      { "value": 2, "label": "Se usan datos básicos (nombre, preferencias generales).", "color": "🟠" },
+      { "value": 3, "label": "Se envían ofertas personalizadas según comportamiento reciente.", "color": "🟡" },
+      { "value": 4, "label": "Se usan modelos predictivos para anticipar necesidades y ofrecer soluciones proactivas.", "color": "🟢" }
     ]
   },
   {
     "id": 19,
     "area": "Experiencia y Relación con el Cliente",
-    "text": "¿Cómo se miden y mejoran las métricas de satisfacción del cliente?",
+    "text": "¿Cómo se sigue la interacción del cliente a lo largo del ciclo de vida?",
     "options": [
-      { "value": 1, "label": "No medimos ni registramos la retroalimentación.", "color": "🔴" },
-      { "value": 2, "label": "Recibimos comentarios informales, pero no los registramos ni analizamos.", "color": "🟠" },
-      { "value": 3, "label": "Realizamos encuestas digitales o revisamos reseñas de forma puntual.", "color": "🟡" },
-      { "value": "4", "label": "Capturamos y analizamos sistemáticamente retroalimentación para mejorar servicios.", "color": "🟢" }
+      { "value": 1, "label": "No se hace seguimiento.", "color": "🔴" },
+      { "value": 2, "label": "Se registra manualmente el historial de interacción.", "color": "🟠" },
+      { "value": 3, "label": "Se utiliza CRM con historial de contactos y compras.", "color": "🟡" },
+      { "value": 4, "label": "Se tiene visibilidad integral del cliente desde prospección hasta postventa.", "color": "🟢" }
     ]
   },
   {
@@ -224,118 +224,118 @@
     "area": "Digitalización de Procesos Operativos",
     "text": "¿Qué procesos operativos están actualmente automatizados?",
     "options": [
-      { "value": 1, "label": "Ningún proceso está automatizado.", "color": "🔴" },
-      { "value": 2, "label": "Algunos procesos simples se ejecutan con herramientas básicas.", "color": "🟠" },
-      { "value": 3, "label": "Varios procesos están semi-automatizados y centralizados.", "color": "🟡" },
-      { "value": 4, "label": "La mayoría de los procesos están totalmente integrados y automatizados.", "color": "🟢" }
+      { "value": 1, "label": "Ningún proceso está automatizado; todo se hace manualmente.", "color": "🔴" },
+      { "value": 2, "label": "Solo tareas aisladas están automatizadas (por ejemplo, envío de correos, generación de facturas).", "color": "🟠" },
+      { "value": 3, "label": "Varias áreas clave (ventas, finanzas, logística) tienen procesos semi-automatizados con herramientas digitales.", "color": "🟡" },
+      { "value": 4, "label": "La mayoría de procesos operativos están automatizados mediante flujos digitales, herramientas integradas o scripts propios.", "color": "🟢" }
     ]
   },
   {
     "id": 22,
     "area": "Digitalización de Procesos Operativos",
-    "text": "¿Cómo se integran los sistemas y procesos entre áreas?",
+    "text": "¿Cómo se gestionan los flujos de trabajo internos?",
     "options": [
-      { "value": 1, "label": "Cada área maneja sus propios datos sin compartirlos.", "color": "🔴" },
-      { "value": 2, "label": "Los datos se comparten por correo o Excel, con duplicaciones y errores comunes.", "color": "🟠" },
-      { "value": 3, "label": "Usamos sistemas compartidos, pero aún se requiere revisión o ajustes manuales frecuentes.", "color": "🟡" },
-      { "value": 4, "label": "Los datos fluyen automáticamente entre áreas, sin necesidad de reprocesamiento, con trazabilidad completa.", "color": "🟢" }
+      { "value": 1, "label": "Todo se organiza con instrucciones verbales, llamadas o papel.", "color": "🔴" },
+      { "value": 2, "label": "Usamos herramientas básicas como correo electrónico o Excel compartido.", "color": "🟠" },
+      { "value": 3, "label": "Contamos con sistemas como Trello, Notion, Google Workspace u otras plataformas colaborativas.", "color": "🟡" },
+      { "value": 4, "label": "Utilizamos herramientas de gestión de flujos automatizados (ERP, Monday, Asana, automatizaciones con IA o RPA).", "color": "🟢" }
     ]
   },
   {
     "id": 23,
     "area": "Digitalización de Procesos Operativos",
-    "text": "¿Qué herramientas utilizan para integrar procesos y sistemas en la empresa?",
+    "text": "¿Cuánto tiempo toma completar tareas administrativas clave (facturación, pagos, reportes, etc.)?",
     "options": [
-      { "value": 1, "label": "No usamos ninguna herramienta de integración.", "color": "🔴" },
-      { "value": 2, "label": "Usamos soluciones parciales (Zapier, hojas conectadas, formularios con Drive).", "color": "🟠" },
-      { "value": 3, "label": "Integramos sistemas con herramientas como Google Apps Script o Power Automate.", "color": "🟡" },
-      { "value": 4, "label": "Usamos herramientas avanzadas de integración (Mulesoft, Zapier Professional, Integromat).", "color": "🟢" }
+      { "value": 1, "label": "Las tareas toman mucho tiempo y dependen de intervención manual constante.", "color": "🔴" },
+      { "value": 2, "label": "Se han reducido tiempos gracias a herramientas simples, pero siguen siendo repetitivas.", "color": "🟠" },
+      { "value": 3, "label": "El tiempo se ha reducido sustancialmente gracias a automatización parcial y plantillas digitales.", "color": "🟡" },
+      { "value": 4, "label": "Las tareas administrativas clave están automatizadas o centralizadas, lo que permite completarlas en minutos y sin errores.", "color": "🟢" }
     ]
   },
   {
     "id": 24,
     "area": "Digitalización de Procesos Operativos",
-    "text": "¿Cómo se protege la información sensible de clientes y la empresa?",
+    "text": "¿Cómo se identifican y corrigen errores operativos?",
     "options": [
-      { "value": 1, "label": "No se resguarda ni respalda la información.", "color": "🔴" },
-      { "value": 2, "label": "La información se guarda localmente sin cifrado ni respaldo seguro.", "color": "🟠" },
-      { "value": 3, "label": "Realizamos respaldos periódicos y tenemos acceso restringido.", "color": "🟡" },
-      { "value": 4, "label": "Usamos herramientas con encriptación, respaldos automáticos y acceso restringido por roles.", "color": "🟢" }
+      { "value": 1, "label": "Solo se detectan cuando generan reclamos o pérdidas visibles.", "color": "🔴" },
+      { "value": 2, "label": "Se revisan periódicamente con esfuerzo manual (conciliaciones, controles de calidad).", "color": "🟠" },
+      { "value": 3, "label": "El sistema alerta automáticamente sobre inconsistencias (por ejemplo, en inventario, pagos, entregas).", "color": "🟡" },
+      { "value": 4, "label": "La empresa cuenta con monitoreo continuo, alertas automáticas y acciones correctivas programadas.", "color": "🟢" }
     ]
   },
   {
     "id": 25,
     "area": "Digitalización de Procesos Operativos",
-    "text": "¿Cómo se identifican y corrigen errores operativos?",
+    "text": "¿Qué tan escalable es su operación gracias a la automatización?",
     "options": [
-      { "value": 1, "label": "Solo se detectan cuando generan reclamos o pérdidas visibles.", "color": "🔴" },
-      { "value": 2, "label": "Se revisan periódicamente con esfuerzo manual.", "color": "🟠" },
-      { "value": 3, "label": "El sistema alerta automáticamente sobre inconsistencias.", "color": "🟡" },
-      { "value": 4, "label": "La empresa cuenta con monitoreo continuo, alertas automáticas y acciones correctivas programadas.", "color": "🟢" }
+      { "value": 1, "label": "El crecimiento implica contratar más personas porque todo depende de trabajo manual.", "color": "🔴" },
+      { "value": 2, "label": "Hemos optimizado algo, pero escalar requiere reorganización significativa.", "color": "🟠" },
+      { "value": 3, "label": "Podemos crecer con eficiencia razonable gracias a algunas automatizaciones.", "color": "🟡" },
+      { "value": 4, "label": "Podemos escalar operaciones sin aumentar proporcionalmente los costos o personal, gracias a automatización robusta.", "color": "🟢" }
     ]
   },
   {
     "id": 26,
     "area": "Datos y Toma de Decisiones",
-    "text": "¿Cómo se recolecta y organiza la información relevante para tomar decisiones?",
+    "text": "¿Qué tan estructurada está la recolección de datos en tu empresa?",
     "options": [
-      { "value": 1, "label": "No se recolecta ni organiza información; las decisiones son intuitivas.", "color": "🔴" },
-      { "value": 2, "label": "Se guardan algunos datos manualmente (en papel o hojas de cálculo).", "color": "🟠" },
-      { "value": 3, "label": "Recopilamos datos digitales y los analizamos ocasionalmente.", "color": "🟡" },
-      { "value": 4, "label": "Sistemas automatizados alertan sobre tendencias y toman decisiones parcialmente autónomas.", "color": "🟢" }
+      { "value": 1, "label": "No recolectamos datos de forma estructurada.", "color": "🔴" },
+      { "value": 2, "label": "Recolectamos algunos datos de forma manual o no sistematizada.", "color": "🟠" },
+      { "value": 3, "label": "Recolectamos datos de forma regular usando herramientas digitales (formularios, CRM, ERPs).", "color": "🟡" },
+      { "value": 4, "label": "Recolectamos datos automáticamente desde múltiples canales y se almacenan de forma organizada.", "color": "🟢" }
     ]
   },
   {
     "id": 27,
     "area": "Datos y Toma de Decisiones",
-    "text": "¿Cómo se comparan datos históricos para evaluar rendimiento y hacer ajustes?",
+    "text": "¿Qué tipo de análisis se realiza sobre los datos recolectados?",
     "options": [
-      { "value": 1, "label": "No se comparan datos ni se hacen ajustes basados en ellos.", "color": "🔴" },
-      { "value": 2, "label": "Se revisan datos puntuales, pero sin profundidad ni métricas claras.", "color": "🟠" },
-      { "value": 3, "label": "Revisamos datos históricos y hacemos pequeños ajustes.", "color": "🟡" },
-      { "value": 4, "label": "Monitoreamos continuamente y ajustamos estrategias y procesos con base en datos objetivos.", "color": "🟢" }
+      { "value": 1, "label": "No realizamos análisis; solo miramos cifras aisladas cuando es necesario.", "color": "🔴" },
+      { "value": 2, "label": "Hacemos análisis básicos en Excel u hojas de cálculo.", "color": "🟠" },
+      { "value": 3, "label": "Hacemos reportes regulares que incluyen gráficos, comparaciones y tendencias.", "color": "🟡" },
+      { "value": 4, "label": "Aplicamos análisis predictivo, segmentación avanzada o dashboards en tiempo real con herramientas BI (Power BI, Tableau, Looker, etc.).", "color": "🟢" }
     ]
   },
   {
     "id": 28,
     "area": "Datos y Toma de Decisiones",
-    "text": "¿Cómo se usan los datos para anticipar necesidades del cliente y ofrecer soluciones proactivas?",
+    "text": "¿Qué nivel de acceso tienen los directivos y equipos a la información relevante para decisiones?",
     "options": [
-      { "value": 1, "label": "No se usan datos para anticipar necesidades ni ofrecer soluciones proactivas.", "color": "🔴" },
-      { "value": 2, "label": "Analizamos datos básicos, pero sin acción inmediata ni seguimiento.", "color": "🟠" },
-      { "value": 3, "label": "Usamos datos históricos para hacer predicciones sencillas.", "color": "🟡" },
-      { "value": 4, "label": "Usamos modelos predictivos para anticipar necesidades y ofrecer soluciones proactivas.", "color": "🟢" }
+      { "value": 1, "label": "Los datos están dispersos y solo algunos empleados los entienden.", "color": "🔴" },
+      { "value": 2, "label": "Hay reportes, pero no son frecuentes ni están adaptados al rol de cada equipo.", "color": "🟠" },
+      { "value": 3, "label": "Los responsables acceden a reportes frecuentes y comprensibles con información útil.", "color": "🟡" },
+      { "value": 4, "label": "Todos los niveles acceden a información segmentada y relevante en tiempo real, a través de plataformas visuales o automatizadas.", "color": "🟢" }
     ]
   },
   {
     "id": 29,
+    "area": "Datos y Toma de Decisiones",
+    "text": "¿Los datos se usan para tomar decisiones estratégicas?",
+    "options": [
+      { "value": 1, "label": "Las decisiones se toman por intuición o experiencia, sin basarse en datos.", "color": "🔴" },
+      { "value": 2, "label": "Los datos se revisan como referencia, pero no son determinantes en las decisiones.", "color": "🟠" },
+      { "value": 3, "label": "Los datos guían decisiones importantes, aunque a veces se complementan con juicio subjetivo.", "color": "🟡" },
+      { "value": 4, "label": "Todas las decisiones clave (marketing, producto, operaciones) se apoyan sistemáticamente en análisis de datos objetivos.", "color": "🟢" }
+    ]
+  },
+  {
+    "id": 30,
     "area": "Datos y Toma de Decisiones",
     "text": "¿Qué herramientas utilizan para visualizar, interpretar y actuar sobre los datos?",
     "options": [
       { "value": 1, "label": "No usamos herramientas de visualización de datos.", "color": "🔴" },
       { "value": 2, "label": "Solo usamos hojas de cálculo con tablas o gráficos básicos.", "color": "🟠" },
       { "value": 3, "label": "Utilizamos dashboards sencillos o herramientas como Google Data Studio.", "color": "🟡" },
-      { "value": 4, "label": "Usamos soluciones avanzadas de inteligencia de negocio (BI), con integración a múltiples fuentes de datos.", "color": "🟢" }
-    ]
-  },
-  {
-    "id": 30,
-    "area": "Datos y Toma de Decisiones",
-    "text": "¿Cómo se usan los datos para mejorar la experiencia del cliente?",
-    "options": [
-      { "value": 1, "label": "No se usan datos; todo es estático.", "color": "🔴" },
-      { "value": 2, "label": "Se revisan datos básicos, pero sin profundidad ni métricas claras.", "color": "🟠" },
-      { "value": 3, "label": "Usamos datos históricos para hacer ajustes manuales.", "color": "🟡" },
-      { "value": 4, "label": "Las decisiones se toman automáticamente basándose en análisis de datos históricos.", "color": "🟢" }
+      { "value": 4, "label": "Utilizamos soluciones avanzadas de inteligencia de negocio (BI), con integración a múltiples fuentes de datos.", "color": "🟢" }
     ]
   },
   {
     "id": 31,
     "area": "Ciberseguridad y Protección de Datos",
-    "text": "¿Cómo se gestionan los riesgos digitales en la empresa?",
+    "text": "¿Cómo gestionan los riesgos digitales en la empresa?",
     "options": [
       { "value": 1, "label": "No identificamos ni gestionamos los riesgos digitales.", "color": "🔴" },
-      { "value": 2, "label": "Se gestionan de forma reactiva, solo cuando ocurren incidentes.", "color": "🟠" },
+      { "value": 2, "label": "Se gestionan de forma reactiva, cuando ocurre un problema.", "color": "🟠" },
       { "value": 3, "label": "Se han identificado riesgos principales y se toman acciones preventivas básicas.", "color": "🟡" },
       { "value": 4, "label": "Contamos con una evaluación formal de riesgos, priorización de amenazas y planes de mitigación activos.", "color": "🟢" }
     ]
@@ -343,89 +343,89 @@
   {
     "id": 32,
     "area": "Ciberseguridad y Protección de Datos",
-    "text": "¿Cómo se protegen los datos sensibles de clientes y de la empresa?",
+    "text": "¿La empresa cuenta con políticas formales de ciberseguridad y uso de tecnologías?",
     "options": [
-      { "value": 1, "label": "No se resguarda ni respalda la información.", "color": "🔴" },
-      { "value": 2, "label": "La información se guarda localmente sin cifrado ni respaldo seguro.", "color": "🟠" },
-      { "value": 3, "label": "Realizamos respaldos periódicos en la nube y tenemos acceso restringido.", "color": "🟡" },
-      { "value": 4, "label": "Usamos herramientas con encriptación, respaldos automáticos y acceso restringido por roles.", "color": "🟢" }
+      { "value": 1, "label": "No existen políticas o protocolos escritos relacionados con ciberseguridad.", "color": "🔴" },
+      { "value": 2, "label": "Existen reglas informales o acuerdos verbales con el equipo.", "color": "🟠" },
+      { "value": 3, "label": "Tenemos políticas mínimas documentadas y comunicadas (uso de contraseñas, backups, antivirus, etc.).", "color": "🟡" },
+      { "value": 4, "label": "Hay políticas formales que incluyen acceso, protección de datos, control de dispositivos, y son actualizadas regularmente.", "color": "🟢" }
     ]
   },
   {
     "id": 33,
     "area": "Ciberseguridad y Protección de Datos",
-    "text": "¿Tienen políticas formales de ciberseguridad y uso de tecnologías?",
+    "text": "¿Qué mecanismos utilizan para asegurar la continuidad operativa ante incidentes digitales?",
     "options": [
-      { "value": 1, "label": "No existen políticas escritas ni protocolos definidos.", "color": "🔴" },
-      { "value": 2, "label": "Existen reglas informales o acuerdos verbales con el equipo.", "color": "🟠" },
-      { "value": 3, "label": "Tenemos políticas mínimas documentadas y comunicadas.", "color": "🟡" },
-      { "value": 4, "label": "Contamos con políticas claras, formales y actualizadas de ciberseguridad.", "color": "🟢" }
+      { "value": 1, "label": "No hay plan de continuidad; cualquier incidente puede paralizar la operación.", "color": "🔴" },
+      { "value": 2, "label": "Tenemos backups manuales, pero sin procedimientos definidos de recuperación.", "color": "🟠" },
+      { "value": 3, "label": "Existen planes de recuperación y se han realizado pruebas parciales.", "color": "🟡" },
+      { "value": 4, "label": "Contamos con planes de continuidad del negocio actualizados, roles definidos y pruebas regulares de contingencia.", "color": "🟢" }
     ]
   },
   {
     "id": 34,
     "area": "Ciberseguridad y Protección de Datos",
-    "text": "¿Qué mecanismos utilizan para asegurar la continuidad operativa ante incidentes digitales?",
+    "text": "¿Cómo capacitan al equipo en temas de ciberseguridad y cumplimiento?",
     "options": [
-      { "value": 1, "label": "No hay plan de continuidad; cualquier incidente puede paralizar la operación.", "color": "🔴" },
-      { "value": 2, "label": "Tenemos backups manuales, pero sin procedimientos definidos de recuperación.", "color": "🟠" },
-      { "value": 3, "label": "Existe un plan de recuperación y se han realizado pruebas parciales.", "color": "🟡" },
-      { "value": 4, "label": "Contamos con planes de continuidad del negocio actualizados, roles definidos y pruebas regulares de contingencia.", "color": "🟢" }
+      { "value": 1, "label": "No se ha realizado ninguna capacitación o sensibilización al respecto.", "color": "🔴" },
+      { "value": 2, "label": "Se han compartido recomendaciones generales, pero sin formación estructurada.", "color": "🟠" },
+      { "value": 3, "label": "Se realizan capacitaciones periódicas con contenidos adaptados al rol de cada equipo.", "color": "🟡" },
+      { "value": 4, "label": "La formación en ciberseguridad es parte de la cultura organizacional: hay programas formales, evaluación continua y simulacros (phishing, recuperación de datos, etc.).", "color": "🟢" }
     ]
   },
   {
     "id": 35,
     "area": "Ciberseguridad y Protección de Datos",
-    "text": "¿Cómo se protegen los datos sensibles de clientes y la empresa?",
+    "text": "¿Cumplen con alguna normativa local o internacional de protección de datos o ciberseguridad?",
     "options": [
-      { "value": 1, "label": "No se resguarda ni respalda la información.", "color": "🔴" },
-      { "value": 2, "label": "La información se guarda localmente sin cifrado ni respaldo seguro.", "color": "🟠" },
-      { "value": 3, "label": "Realizamos respaldos periódicos y restringimos el acceso a ciertos archivos.", "color": "🟡" },
-      { "value": 4, "label": "Usamos herramientas con encriptación, respaldos automáticos y acceso restringido por roles.", "color": "🟢" }
+      { "value": 1, "label": "No cumplimos ninguna normativa ni estamos al tanto de obligaciones legales.", "color": "🔴" },
+      { "value": 2, "label": "Conocemos algunas regulaciones, pero no las aplicamos formalmente.", "color": "🟠" },
+      { "value": 3, "label": "Cumplimos con normativas básicas como protección de datos personales (Ley Orgánica de Protección de Datos Personales en Ecuador, por ejemplo).", "color": "🟡" },
+      { "value": 4, "label": "Cumplimos y documentamos normativas nacionales e internacionales (ISO 27001, GDPR, PCI-DSS u otras), y auditamos regularmente.", "color": "🟢" }
     ]
   },
   {
     "id": 36,
     "area": "Estrategia y Gobernanza Digital",
-    "text": "¿La empresa tiene alguna estrategia digital definida?",
+    "text": "¿Cómo se define y comunica la estrategia digital dentro de la empresa?",
     "options": [
-      { "value": 1, "label": "No existe estrategia digital; todo es reactivo.", "color": "🔴" },
-      { "value": 2, "label": "Hay ideas sueltas sobre digitalización, pero no están documentadas ni ejecutadas.", "color": "🟠" },
-      { "value": 3, "label": "Tiene una estrategia informal escrita o discutida internamente.", "color": "🟡" },
-      { "value": 4, "label": "Cuenta con un plan escrito de digitalización alineado a metas comerciales.", "color": "🟢" }
+      { "value": 1, "label": "No existe estrategia formal de digitalización.", "color": "🔴" },
+      { "value": 2, "label": "La estrategia digital se menciona ocasionalmente, pero no forma parte del plan estratégico.", "color": "🟠" },
+      { "value": 3, "label": "Está incorporada en los objetivos de algunas áreas o iniciativas concretas.", "color": "🟡" },
+      { "value": 4, "label": "Es un eje transversal en la estrategia de la empresa, con presupuesto, metas y responsables definidos.", "color": "🟢" }
     ]
   },
   {
     "id": 37,
     "area": "Estrategia y Gobernanza Digital",
-    "text": "¿Cómo se comunican y alinean los objetivos digitales?",
+    "text": "¿Cómo se alinea la estrategia digital con los objetivos comerciales?",
     "options": [
-      { "value": 1, "label": "No se alinean los objetivos digitales con otras áreas.", "color": "🔴" },
-      { "value": 2, "label": "Hay coincidencia casual, sin planificación formal.", "color": "🟠" },
-      { "value": 3, "label": "La estrategia digital se discute periódicamente con áreas clave.", "color": "🟡" },
-      { "value": 4, "label": "La estrategia digital se revisa trimestralmente y se ajusta con base en resultados.", "color": "🟢" }
+      { "value": 1, "label": "La estrategia digital no tiene relación clara con los objetivos comerciales.", "color": "🔴" },
+      { "value": 2, "label": "Se intenta alinear, pero no hay métricas claras de impacto.", "color": "🟠" },
+      { "value": 3, "label": "Se establecen conexiones entre estrategia digital y objetivos comerciales, con revisiones periódicas.", "color": "🟡" },
+      { "value": 4, "label": "Se monitorea constantemente el impacto de la estrategia digital sobre los objetivos comerciales, con ajustes ágiles y basados en datos.", "color": "🟢" }
     ]
   },
   {
     "id": 38,
     "area": "Estrategia y Gobernanza Digital",
-    "text": "¿Cómo se miden y ajustan los resultados de la estrategia digital?",
+    "text": "¿Quién lidera la estrategia digital en la empresa?",
     "options": [
-      { "value": 1, "label": "No se miden resultados.", "color": "🔴" },
-      { "value": 2, "label": "Algunos datos se revisan, pero sin profundidad ni métricas claras.", "color": "🟠" },
-      { "value": 3, "label": "Revisamos datos históricos y hacemos ajustes manuales.", "color": "🟡" },
-      { "value": 4, "label": "Monitoreamos en tiempo real y ajustamos automáticamente la estrategia.", "color": "🟢" }
+      { "value": 1, "label": "No hay líder definido; la digitalización surge de manera espontánea.", "color": "🔴" },
+      { "value": 2, "label": "Algunos líderes promueven cambios puntuales sin enfoque integral.", "color": "🟠" },
+      { "value": 3, "label": "Un responsable o departamento tiene cierta autonomía en decisiones digitales.", "color": "🟡" },
+      { "value": 4, "label": "Cuenta con un comité digital o líder dedicado a la transformación digital con autoridad estratégica.", "color": "🟢" }
     ]
   },
   {
     "id": 39,
     "area": "Estrategia y Gobernanza Digital",
-    "text": "¿Cómo se rediseñan sus modelos de negocio con base en tecnologías emergentes?",
+    "text": "¿Se revisa y actualiza la estrategia digital con frecuencia?",
     "options": [
-      { "value": 1, "label": "No se han adoptado tecnologías emergentes.", "color": "🔴" },
-      { "value": 2, "label": "Se prueban algunas tecnologías, pero sin impacto real en el modelo.", "color": "🟠" },
-      { "value": 3, "label": "Estamos usando tecnologías como IA o nube para optimizar procesos.", "color": "🟡" },
-      { "value": 4, "label": "Tecnologías emergentes ya están integradas al modelo de negocio.", "color": "🟢" }
+      { "value": 1, "label": "No hay revisión; la estrategia digital es estática.", "color": "🔴" },
+      { "value": 2, "label": "Se revisa ocasionalmente, pero sin metodología formal.", "color": "🟠" },
+      { "value": 3, "label": "Se revisa anualmente o tras hitos importantes.", "color": "🟡" },
+      { "value": 4, "label": "Se mide continuamente y se ajusta con base en resultados y tendencias del mercado.", "color": "🟢" }
     ]
   },
   {
@@ -433,120 +433,54 @@
     "area": "Innovación y Futuro Digital",
     "text": "¿Qué papel tiene la innovación digital dentro de la estrategia de la empresa?",
     "options": [
-      { "value": 1, "label": "No hay visión digital definida.", "color": "🔴" },
-      { "value": 2, "label": "La innovación digital se ha identificado, pero no se aplica en operaciones diarias.", "color": "🟠" },
-      { "value": 3, "label": "Es parte de proyectos específicos y prioridades puntuales.", "color": "🟡" },
-      { "value": 4, "label": "La transformación digital está definida como prioridad estratégica y se revisa trimestralmente.", "color": "🟢" }
+      { "value": 1, "label": "No se considera la innovación digital como parte del plan de negocios.", "color": "🔴" },
+      { "value": 2, "label": "La innovación es algo deseable, pero no forma parte del plan estratégico.", "color": "🟠" },
+      { "value": 3, "label": "Está incorporada en los objetivos de algunas áreas o iniciativas concretas.", "color": "🟡" },
+      { "value": 4, "label": "Es un eje transversal en la estrategia de la empresa, con presupuesto, metas y responsables definidos.", "color": "🟢" }
     ]
   },
   {
     "id": 41,
     "area": "Innovación y Futuro Digital",
-    "text": "¿Cómo se rediseñan los modelos de negocio con base en tecnologías emergentes?",
+    "text": "¿Cómo se identifican nuevas tecnologías o soluciones digitales para el negocio?",
     "options": [
-      { "value": 1, "label": "No se han adoptado tecnologías emergentes.", "color": "🔴" },
-      { "value": 2, "label": "Se prueban algunas tecnologías, pero sin impacto real en el modelo.", "color": "🟠" },
-      { "value": 3, "label": "Estamos usando tecnologías como IA o nube para optimizar procesos.", "color": "🟡" },
-      { "value": 4, "label": "Tecnologías emergentes ya están integradas al modelo de negocio.", "color": "🟢" }
+      { "value": 1, "label": "Solo se implementan tecnologías cuando hay urgencias o presión externa.", "color": "🔴" },
+      { "value": 2, "label": "Nos informamos ocasionalmente, pero sin metodología sistemática.", "color": "🟠" },
+      { "value": 3, "label": "Exploramos y evaluamos tecnologías digitales con base en tendencias del mercado o benchmarks sectoriales.", "color": "🟡" },
+      { "value": 4, "label": "Contamos con procesos formales de vigilancia tecnológica, scouting de innovación o colaboración con startups/instituciones.", "color": "🟢" }
     ]
   },
   {
     "id": 42,
     "area": "Innovación y Futuro Digital",
-    "text": "¿Cómo se evalúan y mejoran las capacidades humanas en tecnología digital?",
+    "text": "¿La empresa ha rediseñado productos, servicios o modelos de negocio con base en capacidades digitales?",
     "options": [
-      { "value": 1, "label": "No hay desarrollo digital en el equipo.", "color": "🔴" },
-      { "value": 2, "label": "Se dan capacitaciones puntuales sin continuidad.", "color": "🟠" },
-      { "value": 3, "label": "Hay talleres periódicos o recursos disponibles para aprender.", "color": "🟡" },
-      { "value": 4, "label": "La empresa tiene un plan estructurado de formación digital continua.", "color": "🟢" }
+      { "value": 1, "label": "Ofrecemos los mismos productos y servicios sin cambios digitales significativos.", "color": "🔴" },
+      { "value": 2, "label": "Hemos digitalizado la atención o comunicación, pero no el producto/servicio en sí.", "color": "🟠" },
+      { "value": 3, "label": "Algunos productos o servicios han sido adaptados o complementados con tecnología.", "color": "🟡" },
+      { "value": 4, "label": "Desarrollamos productos/servicios nativos digitales o modelos de negocio digitales (suscripciones, plataformas, servicios on demand, etc.).", "color": "🟢" }
     ]
   },
   {
     "id": 43,
     "area": "Innovación y Futuro Digital",
-    "text": "¿Cómo se usan los datos para anticipar necesidades del cliente y ofrecer soluciones proactivas?",
+    "text": "¿Existe una cultura organizacional que promueva la experimentación y el aprendizaje digital?",
     "options": [
-      { "value": 1, "label": "No se usan datos para anticipar necesidades ni ofrecer soluciones proactivas.", "color": "🔴" },
-      { "value": 2, "label": "Analizamos datos básicos, pero sin acción inmediata ni seguimiento.", "color": "🟠" },
-      { "value": 3, "label": "Usamos datos históricos para hacer predicciones sencillas.", "color": "🟡" },
-      { "value": 4, "label": "Usamos modelos predictivos para anticipar necesidades y ofrecer soluciones proactivas.", "color": "🟢" }
+      { "value": 1, "label": "La mayoría de empleados resiste el cambio digital y prefiere lo tradicional.", "color": "🔴" },
+      { "value": 2, "label": "Algunos equipos están dispuestos a innovar, pero no hay políticas claras para probar nuevas ideas.", "color": "🟠" },
+      { "value": 3, "label": "Se permite experimentar con nuevas soluciones y se reconocen iniciativas internas.", "color": "🟡" },
+      { "value": 4, "label": "Hay incentivos, metodologías ágiles y espacios organizados para probar, evaluar e implementar mejoras digitales continuamente.", "color": "🟢" }
     ]
   },
   {
     "id": 44,
     "area": "Innovación y Futuro Digital",
-    "text": "¿Cómo busca la empresa nuevas tendencias y se adapta a cambios tecnológicos?",
+    "text": "¿Qué tipo de tecnologías emergentes se están considerando o utilizando?",
     "options": [
-      { "value": 1, "label": "No buscamos ni nos adaptamos a nuevas tendencias tecnológicas.", "color": "🔴" },
-      { "value": 2, "label": "A veces se prueba alguna nueva herramienta, sin estrategia detrás.", "color": "🟠" },
-      { "value": 3, "label": "Buscamos activamente nuevas tendencias y aplicamos algunas en nuestro modelo.", "color": "🟡" },
-      { "value": 4, "label": "La empresa busca activamente nuevas tendencias y se adapta rápidamente a cambios tecnológicos.", "color": "🟢" }
-    ]
-  },
-  {
-    "id": 45,
-    "area": "Innovación y Futuro Digital",
-    "text": "¿Cómo se usan los datos para mejorar la experiencia del cliente?",
-    "options": [
-      { "value": 1, "label": "No se usan datos; todo es estático.", "color": "🔴" },
-      { "value": 2, "label": "Se revisan datos básicos, pero sin profundidad ni métricas claras.", "color": "🟠" },
-      { "value": 3, "label": "Usamos datos históricos para hacer ajustes manuales.", "color": "🟡" },
-      { "value": 4, "label": "Las decisiones se toman automáticamente basándose en análisis de datos históricos.", "color": "🟢" }
-    ]
-  },
-  {
-    "id": 46,
-    "area": "Estrategia y Gobernanza Digital",
-    "text": "¿Cómo se comunican y alinean los objetivos digitales con otros objetivos de la empresa?",
-    "options": [
-      { "value": 1, "label": "No hay alineación entre objetivos digitales y otros objetivos.", "color": "🔴" },
-      { "value": 2, "label": "Hay coincidencia casual, sin planificación formal.", "color": "🟠" },
-      { "value": 3, "label": "La estrategia digital se discute periódicamente con áreas clave.", "color": "🟡" },
-      { "value": 4, "label": "La estrategia digital se revisa trimestralmente y se ajusta con base en resultados.", "color": "🟢" }
-    ]
-  },
-  {
-    "id": 47,
-    "area": "Estrategia y Gobernanza Digital",
-    "text": "¿Cómo se miden y ajustan los resultados de la estrategia digital?",
-    "options": [
-      { "value": 1, "label": "No se miden resultados.", "color": "🔴" },
-      { "value": 2, "label": "Algunos datos se revisan, pero sin profundidad ni métricas claras.", "color": "🟠" },
-      { "value": 3, "label": "Revisamos datos históricos y hacemos pequeños ajustes.", "color": "🟡" },
-      { "value": 4, "label": "Monitoreamos en tiempo real y ajustamos automáticamente la estrategia.", "color": "🟢" }
-    ]
-  },
-  {
-    "id": 48,
-    "area": "Estrategia y Gobernanza Digital",
-    "text": "¿Cómo se toman decisiones en base a datos históricos?",
-    "options": [
-      { "value": 1, "label": "Las decisiones se toman sin apoyo de datos históricos.", "color": "🔴" },
-      { "value": 2, "label": "Se revisan datos históricos manualmente, sin profundidad ni métricas claras.", "color": "🟠" },
-      { "value": 3, "label": "Usamos datos históricos para evaluar desempeño y hacer ajustes manuales.", "color": "🟡" },
-      { "value": 4, "label": "Las decisiones se toman automáticamente basándose en análisis de datos históricos.", "color": "🟢" }
-    ]
-  },
-  {
-    "id": 49,
-    "area": "Estrategia y Gobernanza Digital",
-    "text": "¿Cómo se usan los datos para anticipar necesidades del cliente y ofrecer soluciones proactivas?",
-    "options": [
-      { "value": 1, "label": "No se usan datos para anticipar necesidades ni ofrecer soluciones proactivas.", "color": "🔴" },
-      { "value": 2, "label": "Analizamos datos básicos, pero sin acción inmediata ni seguimiento.", "color": "🟠" },
-      { "value": 3, "label": "Usamos datos históricos para hacer predicciones sencillas.", "color": "🟡" },
-      { "value": 4, "label": "Usamos modelos predictivos para anticipar necesidades y ofrecer soluciones proactivas.", "color": "🟢" }
-    ]
-  },
-  {
-    "id": 50,
-    "area": "Innovación y Futuro Digital",
-    "text": "¿Cómo se rediseñan sus modelos de negocio con base en tecnologías emergentes?",
-    "options": [
-      { "value": 1, "label": "No se han adoptado tecnologías emergentes.", "color": "🔴" },
-      { "value": 2, "label": "Se prueban algunas tecnologías, pero sin impacto real en el modelo.", "color": "🟠" },
-      { "value": 3, "label": "Estamos usando tecnologías como IA o nube para optimizar procesos.", "color": "🟡" },
-      { "value": 4, "label": "Tecnologías emergentes ya están integradas al modelo de negocio.", "color": "🟢" }
+      { "value": 1, "label": "No usamos ni estamos evaluando tecnologías emergentes.", "color": "🔴" },
+      { "value": 2, "label": "Conocemos herramientas como IA, IoT, RPA o blockchain, pero no hemos hecho pruebas.", "color": "🟠" },
+      { "value": 3, "label": "Hemos realizado pruebas piloto o implementaciones limitadas de tecnologías emergentes.", "color": "🟡" },
+      { "value": 4, "label": "Estamos integrando o escalando tecnologías emergentes en procesos clave del negocio.", "color": "🟢" }
     ]
   }
 ]
