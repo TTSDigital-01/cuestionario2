@@ -1,4 +1,4 @@
-// pages/informe.js - Versión 9 corregida
+// pages/informe.js - Versión 11
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import QuestionnaireLayout from '../components/QuestionnaireLayout';
@@ -33,6 +33,7 @@ import PdfDownloadButton from '../components/PdfDownloadButton';
 export default function InformePage() {
   const router = useRouter();
   const [diagnostico, setDiagnostico] = useState(null);
+  const [generandoPDF, setGenerandoPDF] = useState(false);
 
   // Cargar diagnóstico desde sessionStorage
   useEffect(() => {
@@ -44,6 +45,35 @@ export default function InformePage() {
     const parsed = JSON.parse(datosGuardados);
     setDiagnostico(parsed);
   }, []);
+
+  // Enviar diagnóstico a Google Sheets cuando esté cargado
+  useEffect(() => {
+    if (diagnostico) {
+      enviarADiagnosticoSheets();
+    }
+  }, [diagnostico]);
+
+  const enviarADiagnosticoSheets = async () => {
+    if (!diagnostico) return;
+
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbzP5kRrpDBY6JgArIfELBpNUerfxFCiL-H9M1q5ooDPSnsIK001X9ZQqFDH_0R4GRj_/exec ', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(diagnostico)
+      });
+
+      if (response.ok) {
+        console.log('✅ Diagnóstico enviado exitosamente a Google Sheets');
+      } else {
+        console.error('❌ Error HTTP al enviar a Google Sheets:', response.status);
+      }
+    } catch (error) {
+      console.error('⚠️ Error al enviar diagnóstico:', error.message);
+    }
+  };
 
   if (!diagnostico) {
     return (
@@ -131,7 +161,6 @@ export default function InformePage() {
     <QuestionnaireLayout>
       {/* Contenedor principal del informe */}
       <div id="informe-contenido" className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 bg-white">
-
         {/* Encabezado Institucional */}
         <div className="flex flex-col items-center justify-center text-center py-8 bg-white border-b border-gray-200">
           <img src="/logo-sf-1.png" alt="Logo TTS Digital" className="h-24 mb-6" />
@@ -174,7 +203,7 @@ export default function InformePage() {
         <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6 mb-8">
           <h3 className="text-lg font-semibold text-primary-dark mb-4">¿Qué significan los niveles de madurez digital?</h3>
           <ul className="space-y-3 text-gray-700 list-disc pl-5">
-            <li><span className="text-red-600">🔴 Tradicional:</span> La empresa opera con procesos manuales, sin visión digital definida ni uso estructurado de herramientas digitales.</li>
+            <li><span className="text-red-600">🔴 Tradicional:</span> La empresa opera con procesos manuales, sin visión ni estrategia digital definida.</li>
             <li><span className="text-orange-500">🟠 Explorador:</span> Hay interés en transformarse digitalmente, pero aún falta planificación estratégica y seguimiento constante.</li>
             <li><span className="text-yellow-500">🟡 Emergente:</span> Se han adoptado herramientas digitales básicas, con cierta automatización y análisis de datos históricos.</li>
             <li><span className="text-green-600">🟢 Digitalizado:</span> Los sistemas están conectados, las decisiones se toman con base en datos y hay un enfoque integrado y proactivo.</li>
@@ -184,9 +213,7 @@ export default function InformePage() {
         {/* Recomendación General */}
         <div className="bg-blue-50 rounded-lg border-l-4 border-primary-dark p-6 mb-8">
           <h2 className="text-xl font-semibold text-primary-dark mb-4">Recomendación General</h2>
-          <p className="text-gray-700 leading-relaxed">
-            {recomendacionGeneral}
-          </p>
+          <p className="text-gray-700 leading-relaxed">{recomendacionGeneral}</p>
         </div>
 
         {/* Tabla de Resultados por Área */}
@@ -213,27 +240,23 @@ export default function InformePage() {
         </div>
 
         {/* Gráfico Comparativo */}
-        <div id="grafico-comparativo" className="max-w-4xl mx-auto my-10 h-96">
+        <div className="max-w-4xl mx-auto my-10 h-96">
           <h3 className="text-lg font-semibold text-primary-dark mb-4">Comparativa por Área</h3>
           <Bar data={dataComparativo} options={options} plugins={[ChartDataLabels]} />
         </div>
 
         {/* Fortalezas y Oportunidades Clave */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
           <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6">
             <p className="text-sm text-gray-500">Fortalezas</p>
             <ul className="list-disc pl-5 mt-2 text-gray-700">
-              {fortalezas.length > 0 ? fortalezas.map((f, idx) => (
-                <li key={idx}>{f}</li>
-              )) : <li>No se identificaron fortalezas claras</li>}
+              {fortalezas.length > 0 ? fortalezas.map((f, idx) => <li key={idx}>{f}</li>) : <li>No se identificaron fortalezas claras</li>}
             </ul>
           </div>
           <div className="bg-white rounded-lg shadow-md border border-gray-200 p-6">
             <p className="text-sm text-gray-500">Oportunidades Clave</p>
             <ul className="list-disc pl-5 mt-2 text-gray-700">
-              {oportunidadesClave.length > 0 ? oportunidadesClave.map((o, idx) => (
-                <li key={idx}>{o}</li>
-              )) : <li>Sin oportunidades definidas</li>}
+              {oportunidadesClave.length > 0 ? oportunidadesClave.map((o, idx) => <li key={idx}>{o}</li>) : <li>Sin oportunidades definidas</li>}
             </ul>
           </div>
         </div>
@@ -246,9 +269,9 @@ export default function InformePage() {
           >
             Volver al Cuestionario
           </button>
-          <PdfDownloadButton diagnostico={diagnostico} />
+          <PdfDownloadButton diagnostico={diagnostico} setGenerandoPDF={setGenerandoPDF} generandoPDF={generandoPDF} />
           <a
-            href={`https://wa.me/593968213129?text=Hola%20TTS%20Digital  ,%20quisiera%20mejorar%20mi%20madurez%20digital`}
+            href={`https://wa.me/593968213129?text=Hola%20TTS%20Digital   ,%20quisiera%20mejorar%20mi%20madurez%20digital`}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full transition-all inline-flex items-center justify-center gap-2 w-full md:w-auto"
@@ -261,3 +284,23 @@ export default function InformePage() {
     </QuestionnaireLayout>
   );
 }
+const guardarDiagnosticoEnSheets = async (diagnostico) => {
+  try {
+    const res = await fetch('/api/guardar-diagnostico', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(diagnostico)
+    });
+
+    if (!res.ok) {
+      console.error('Error al guardar en Google Sheets');
+    } else {
+      const data = await res.json();
+      console.log('Datos guardados en Sheets:', data);
+    }
+  } catch (error) {
+    console.error('Error en la solicitud:', error);
+  }
+};
